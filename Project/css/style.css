@@ -8,6 +8,24 @@ body {
 /*.container {
 	width: 100%;
 }*/
+/*INDICATORS*/
+/*#left_Indikator {
+	position: fixed;
+	top: 300px;
+	left: 0px;
+}*/
+#left_Indikator {
+	position: fixed;
+	top: 300px;
+	left: 0px;
+}
+
+#right_Indikator {
+	position: fixed;
+	top: 300px;
+	right: 0px;
+}
+
 #allcontent {
 	width: 1600px;
 	margin: 0 auto;
@@ -67,12 +85,7 @@ ul.nav {
 	height: 47px;
 	margin: 0px 15px 0px 8px;
 }
-.nav select {
-	/*float: right;*/
-	display: inline-block;
-	height: 47px;
-	margin-left: 8px;
-}
+
 .nav a {
 	display: block;
 	color: black;
@@ -91,6 +104,10 @@ ul.nav {
 	border-color: black;
 }
 .nav select {
+	/*float: right;*/
+	display: inline-block;
+	height: 47px;
+	margin-left: 8px;
 	border-style: none;
 	background-color: transparent;
 	vertical-align: center;
@@ -99,6 +116,23 @@ ul.nav {
 	color: black;
 	padding-right: 5px;
 	margin-left: 5px;
+	width: 150%;
+	-webkit-appearance: none;
+	background-image: url('../images/arrow_language_2.png');
+	background-size: 31%;
+	background-position: right center;
+	background-repeat: no-repeat;
+	line-height: 1em;
+	/* for FF */
+	-moz-appearance: none;
+	text-indent: 0.01px; 
+	text-overflow: '';
+	/* for IE */
+	-ms-appearance: none;
+	appearance: none!important;
+}
+	.nav select::-ms-expand {
+	  display: none;
 }
 .nav option {
 	border-style: none;
