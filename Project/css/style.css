@@ -118,7 +118,7 @@ ul.nav {
 	margin-left: 5px;
 	width: 150%;
 	-webkit-appearance: none;
-	background-image: url('../images/arrow_language_2.png');
+	background-image: url('../images/arrow_language.png');
 	background-size: 31%;
 	background-position: right center;
 	background-repeat: no-repeat;
@@ -269,7 +269,15 @@ article.content_3 h2 {
 	padding: 170px 0px 10px 0px;
 	font-size: 60px;
 }
-
+footer {
+	background-color: #009ee0;
+}
+footer p {
+	color: #ffffff;
+	font-size: 12px;
+	text-align: center;
+	margin: 0px; 
+	padding: 18px 0px;
 
 
 
