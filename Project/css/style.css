@@ -75,8 +75,8 @@ ul.nav {
 	right: 120px;
 }
 .header_logo, .nav {
-	display: inline-block;
-	vertical-align: center;
+	/*display: inline-block;*/
+	/*vertical-align: center;*/
 	/*float: left;*/
 }
 .nav li {
@@ -85,7 +85,6 @@ ul.nav {
 	height: 47px;
 	margin: 0px 15px 0px 8px;
 }
-
 .nav a {
 	display: block;
 	color: black;
@@ -269,8 +268,28 @@ article.content_3 h2 {
 	padding: 170px 0px 10px 0px;
 	font-size: 60px;
 }
+article.columns_2_4 {
+	display: block;
+}
+section.content_4 div.left_box, div.right_box {
+	width: 50%;
+	/*height: 805px;*/
+	background-color: yellow;
+}
+article.columns_2 div.left_box, div.right_box {
+	display: inline-block;
+	float: right;
+}
+section.content_4 div.right_box img, section.content_4 div.left_box img {
+	display: block;
+	width: 100%;
+}
+/*div.right_box {
+	float: right;
+}*/
 footer {
 	background-color: #009ee0;
+	clear: right;
 }
 footer p {
 	color: #ffffff;
@@ -278,8 +297,7 @@ footer p {
 	text-align: center;
 	margin: 0px; 
 	padding: 18px 0px;
-
-
+}	
 
 			
 
