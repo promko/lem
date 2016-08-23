@@ -31,7 +31,7 @@ body {
 	margin: 0 auto;
 	overflow: hidden;
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, button {
 	text-transform: uppercase;
 }
 ul {
@@ -297,13 +297,12 @@ article.full_box_blue h2 {
 }
 article.columns_teaser {
 	overflow: hidden;
-	position: relative;
+	/*position: relative;*/
 }
 .teaser_left_box, .teaser_right_box {
 	display: inline-block;
     overflow: hidden;
     width: 50%;
-    overflow: hidden;
     float: left;
 }
 
@@ -314,16 +313,47 @@ section.teaser div.teaser_right_box img, section.teaser div.teaser_left_box img 
     /*width: 195%;*/
 }
 
-.teaser_left_box img {
-	/*right: 0px;*/
-    /*position: absolute;
-    z-index: -1020;*/
+/*article columns_teaser_text*/
+article.columns_teaser_text .teaser_text_left_block,  article.columns_teaser_text .teaser_text_right_block {
+	display: inline-block;
+	height: 805px;
+	background-color: #ffffff;
+	text-align: center;
+	color: #009ee0;
+    overflow: hidden;
+    width: 50%;
+    float: left;
 }
-/*.teaser_right_box img {
-	left: 690px;
-    position: absolute;
-    z-index: -1010;
-}*/
+article.columns_teaser_text h2 {
+	color: #009ee0;
+	text-align: center;
+	font-size: 60px;
+}
+article.columns_teaser_text div.teaser_block_content {
+	margin: 20px 180px;
+}
+div.teaser_block_content h3, div.teaser_block_content p, div.teaser_block_content button {
+	margin-left: 0px;
+	margin-right: 0px;
+	color: #009ee0;
+}
+div.teaser_block_content h3 {
+	font-size: 24px;
+}
+div.teaser_block_content p {
+	height: 200px;
+	overflow: hidden;
+	font-size: 16px;
+}
+article.columns_teaser_text button {
+	background-color: #ffffff;
+	text-align: center;
+	border: 1px solid #009ee0;
+	line-height: 2em;
+	margin: 60px 0px;
+	font-size: 16px;
+
+}
 /*FOOTER*/
 footer {
 	background-color: #009ee0;
