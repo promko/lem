@@ -14,13 +14,13 @@ body {
 	top: 300px;
 	left: 0px;
 }*/
-#left_Indikator {
+#left_indikator {
 	position: fixed;
 	top: 300px;
 	left: 0px;
 }
 
-#right_Indikator {
+#right_indikator {
 	position: fixed;
 	top: 300px;
 	right: 0px;
@@ -90,7 +90,7 @@ ul.header_nav {
 	color: black;
 	line-height: 47px;
 	font-size: 116%;
-	font-weight: 330;
+	/*font-weight: 330;*/
 	text-align: center;
 	padding-left: 17px;
 	padding-right: 17px;
@@ -239,7 +239,7 @@ article.slider_box img {
 	position: relative; 
 	left: -310px;
 	/*top: -15px;*/
-	/*z-index: -1000;*/*/
+	/*z-index: -1000;*/
 }
 article.slider_box div.block_text p {
 	margin: 150px 120px 100px 120px;
@@ -293,25 +293,29 @@ article.full_box_blue h2 {
 
 /*SECTION CONTENT_TEASER*/
 .columns_teaser {
-	height: 805PX;
+	height: 805px;
 }
 article.columns_teaser {
 	overflow: hidden;
 	position: relative;
 }
-article.columns_teaser div.teaser_left_box, div.teaser_right_box {
-	width: 50%;
-	float: left;
-	overflow: hidden;
+.teaser_left_box, .teaser_right_box {
+	display: inline-block;
+    overflow: hidden;
+    width: 50%;
+    overflow: hidden;
+    float: left;
 }
-/*div.teaser_left_box {
-	overflow: hidden;
-}*/
+
 section.teaser div.teaser_right_box img, section.teaser div.teaser_left_box img {
-	/*display: block;*/
+    position: relative;
+    left: -120px;
+    /*top: -50px;*/
+    /*width: 195%;*/
 }
+
 .teaser_left_box img {
-	right: 0px;
+	/*right: 0px;*/
     /*position: absolute;
     z-index: -1020;*/
 }
