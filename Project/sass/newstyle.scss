@@ -43,8 +43,8 @@ ul {
 ul {
     li {
         list-style-type: none;
-    }  
-} 
+    }
+}
 a {
     text-decoration: none;
 }
@@ -57,10 +57,11 @@ p {
 /*article full_box video_1*/
 section.content_top {
     .full_box_video_1 {
-        height: 805px;
+        max-height: 800px;
+        overflow: hidden;
         position: relative;
-    }  
-} 
+    }
+}
 /*nav {
     position: absolute;
     top: 90px;
@@ -71,7 +72,7 @@ nav {
         position: absolute;
         top: 90px;
         left: 120px;
-    }   
+    }
 }
 div.header_logo {
     img {
@@ -96,7 +97,7 @@ ul.header_nav {
         display: inline-block;
         height: 47px;
         margin: 0px 15px 0px 8px;
-    } 
+    }
     a {
         display: block;
         color: black;
@@ -137,7 +138,7 @@ ul.header_nav {
         line-height: 1em;
         /* for FF */
         -moz-appearance: none;
-        text-indent: 0.01px; 
+        text-indent: 0.01px;
         text-overflow: '';
         /* for IE */
         -ms-appearance: none;
@@ -183,8 +184,8 @@ section.content_top {
     .columns_text_icon {
         height: 680px;
         background-color: white;
-    }  
-} 
+    }
+}
 section.content_top {
     article.columns_text_icon {
         h2, h3, p {
@@ -239,7 +240,8 @@ section.content_top {
 }
 section.content_slider {
     .full_box_video_2 {
-        height: 805px;
+       max-height: 800px;
+       overflow: hidden;
     }
     /*article slider*/
     article.slider_box {
@@ -250,22 +252,22 @@ section.content_slider {
     article.slider_box {
         .block_text, div.video {
             @include div_video;
-        }    
-    } 
-} 
+        }
+    }
+}
 
 
 article.slider_box {
     div.video {
         float: right;
-    }   
+    }
 }
 #slider_block_video {
     overflow: hidden;
 }
 /*#slider_block_video {
     overflow: hidden;
-    position: absolute; 
+    position: absolute;
     left: 480px;
     top: -15px;
     z-index: -1000;
@@ -273,10 +275,10 @@ article.slider_box {
 
 article.slider_box {
     img {
-        position: relative; 
+        position: relative;
         left: -310px;
         /*top: -15px;*/
-        /*z-index: -1000;*/
+        /*z-index: -1001;*/
     }
     div.block_text {
         p {
@@ -288,7 +290,7 @@ article.slider_box {
             text-align: center;
             letter-spacing: -0.5px;
             line-height: 1.3em;
-        }   
+        }
     }
 }
 
@@ -362,12 +364,12 @@ section.teaser {
     }
 }
 
-
 /*article columns_teaser_text*/
 article.columns_teaser_text {
+    height: 805px;
+    overflow: hidden;
     .teaser_text_left_block,  .teaser_text_right_block {
         display: inline-block;
-        height: 805px;
         background-color: #ffffff;
         text-align: center;
         color: #009ee0;
@@ -385,7 +387,7 @@ article.columns_teaser_text {
         img {
             height: 100px;
         }
-        h3, p, button {
+        h3, p, button, a {
             margin-left: 0px;
             margin-right: 0px;
             color: #009ee0;
@@ -406,7 +408,39 @@ article.columns_teaser_text {
         line-height: 2em;
         margin: 60px 0px;
         font-size: 16px;
+        text-transform: uppercase;
+    }
+}
+section.content_bottom {
+    .full_box_video_3 {
+        max-height: 800px;
+        overflow: hidden;
+        
+        .video_button {
+            position: relative;
+            img {
+                position: absolute;
+                bottom: 315px;
+                left: 750px;
+                z-index: 1000;
+            }
+        }
 
+    }
+    .newsletter_modul {
+        /*height: 805px;*/
+        .mail_box {
+            background-image: url('../images/Newsletter_background.jpg');
+            background-size: 100%;
+            background-position: right center;
+            background-repeat: no-repeat;
+            h3 {
+                font-size: 24px;
+                text-align: center;
+                color: #ffffff;
+                margin: 0px;
+            }
+        }
     }
 }
 
@@ -419,8 +453,8 @@ footer {
         color: #ffffff;
         font-size: 12px;
         text-align: center;
-        margin: 0px; 
+        margin: 0px;
         padding: 18px 0px;
 
-    } 
-}	
+    }
+}
