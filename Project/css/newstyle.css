@@ -524,14 +524,18 @@ section.content_bottom .newsletter_modul .mail_box form input[type="submit"] {
   padding-bottom: 0px;
   padding-left: 13px;
 }
+/* line 481, ../sass/newstyle.scss */
+section.content_bottom .content_bottom_text {
+  height: 740px;
+}
 
 /*FOOTER*/
-/* line 485, ../sass/newstyle.scss */
+/* line 488, ../sass/newstyle.scss */
 footer {
   background-color: #009ee0;
   clear: right;
 }
-/* line 488, ../sass/newstyle.scss */
+/* line 491, ../sass/newstyle.scss */
 footer p {
   color: #ffffff;
   font-size: 12px;
