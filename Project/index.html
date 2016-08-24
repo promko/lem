@@ -4,18 +4,78 @@
         <link rel="shortcut icon" href="favicon.png" type="image/png">
         <title>Lemken</title>
         <meta charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!--		<link rel="stylesheet" type="text/css" href="css/style.css">-->
         <link rel="stylesheet" type="text/css" href="css/newstyle.css">
+        <script>
+            $(document).ready(function () {
+//                alert('1111111111111111111');
+//                $("p").click(function () {
+//                    $(this).hide();
+//                }
+//                );
+//                $("div#player").find("a.ytp-watermark").each(function () {
+//                    $(this).hide();
+//                });
+            });
+        </script>
     </head>
     <body>
+        
         <div id="allcontent">
             <section class=content_top>
                 <article class="full_box_video_1">
-                    <!--iframe id="jquery-tube-player-0" width="1920" height="1080" frameborder="0" data-youtube="gRJmYADPUTU" allowfullscreen="1" title="YouTube video player" src="https://www.youtube.com/embed/gRJmYADPUTU?autohide=2&autoplay=true&controls=0&start=1&enablejsapi=1&loop=0&modestbranding=1&autoload=false&order=relevance&author=false&hide=1&showinfo=0&wmode=transparent&version=0&format=0&limit=0&key=false&render=false&truncate=false&click=false&origin=https%3A%2F%2Flemken.com&widgetid=1">
-                    <!DOCTYPE html>
-                    </iframe-->
-                    <img src="images/mak_.jpg" alt="video" title="video">
-                    <!--div class="container"-->
+                    <div id="YTplayer"></div>
+                    <script>
+                        // 2. This code loads the IFrame Player API code asynchronously.
+                        var tag = document.createElement('script');
+
+                        tag.src = "https://www.youtube.com/iframe_api";
+                        var firstScriptTag = document.getElementsByTagName('script')[0];
+                        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+                        // 3. This function creates an <iframe> (and YouTube player)
+                        //    after the API code downloads.
+                        var player;
+                        function onYouTubeIframeAPIReady() {
+                            player = new YT.Player('YTplayer', {
+                                height: '1000',
+                                width: '1780',
+                                videoId: 'gRJmYADPUTU',
+                                playerVars: {'autoplay': 1, 'autohide': 1, 'controls': 0, 'disablekb': 1, 'iv_load_policy': 3, 'loop': 1, 'playlist': 'gRJmYADPUTU', 'modestbranding': 1, 'rel': 0, 'showinfo': 0},
+                                events: {
+                                    'onReady': onPlayerReady
+                                }
+                            });
+                        }
+
+                        // 4. The API will call this function when the video player is ready.
+                        function onPlayerReady(event) {
+                            //alert('a!');
+                            
+                            event.target.setVolume(0);
+                            event.target.playVideo();
+                            //hideWatermark();
+                        }
+                        function hideWatermark() {
+                            var watermark = document.getElementsByClassName("ytp-watermark")[0];
+                            alert(watermark);
+
+                            //$(".ytp-watermark").remove();
+                            //watermark.style.display = 'none';
+                            //$("#player").hide();
+                            //alert($(".ytp-watermark").length);
+                            alert($("#player").length);
+                            //alert($("div.header_title").length);
+                            alert('aaaaaaaaaaaaaaaaaaaaaa!');
+                            
+                            
+                            //$(".ytp-watermark").hide();
+                        }
+                    </script>
+                    <!--                    <iframe id="ytplayer" src="https://www.youtube.com/embed/gRJmYADPUTU?autoplay=1&controls=0" frameborder="0"/>-->
+                    <!--                    <img src="images/mak_.jpg" alt="video" title="video">-->
+
                     <nav>
                         <div class="header_logo">
                             <img src="images/logo_lemken.png" alt="logo">
