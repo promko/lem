@@ -1,35 +1,35 @@
 /*GENERAL STYLES*/
 body {
-	font-family: "Open Sans", sans-serif;
-	font-size: 100%;
-	margin: 0px;
-	padding: 0px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 /*.container {
-	width: 100%;
+        width: 100%;
 }*/
 /*INDICATORS*/
 /*#left_Indikator {
-	position: fixed;
-	top: 300px;
-	left: 0px;
+        position: fixed;
+        top: 300px;
+        left: 0px;
 }*/
 #left_indikator {
-	position: fixed;
-	top: 300px;
-	left: 0px;
+    position: fixed;
+    top: 300px;
+    left: 0px;
 }
 
 #right_indikator {
-	position: fixed;
-	top: 300px;
-	right: 0px;
+    position: fixed;
+    top: 300px;
+    right: 0px;
 }
 
 #allcontent {
-	width: 1600px;
-	margin: 0 auto;
-	overflow: hidden;
+    width: 1600px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -363,19 +363,53 @@ section.teaser {
 }
 
 
-.teaser_left_box {
-    img {
-        /*right: 0px;*/
-        /*position: absolute;
-        z-index: -1020;*/
-    }  
-} 
+/*article columns_teaser_text*/
+article.columns_teaser_text {
+    .teaser_text_left_block,  .teaser_text_right_block {
+        display: inline-block;
+        height: 805px;
+        background-color: #ffffff;
+        text-align: center;
+        color: #009ee0;
+        overflow: hidden;
+        width: 50%;
+        float: left;
+    }
+    h2 {
+        color: #009ee0;
+        text-align: center;
+        font-size: 60px;
+    }
+    div.teaser_block_content {
+        margin: 20px 180px;
+        img {
+            height: 100px;
+        }
+        h3, p, button {
+            margin-left: 0px;
+            margin-right: 0px;
+            color: #009ee0;
+        }
+        h3 {
+            font-size: 24px;
+        }
+        p {
+            height: 200px;
+            overflow: hidden;
+            font-size: 16px;
+        }
+    }
+    button {
+        background-color: #ffffff;
+        text-align: center;
+        border: 1px solid #009ee0;
+        line-height: 2em;
+        margin: 60px 0px;
+        font-size: 16px;
 
-/*.teaser_right_box img {
-    left: 690px;
-    position: absolute;
-    z-index: -1010;
-}*/
+    }
+}
+
 /*FOOTER*/
 
 footer {

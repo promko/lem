@@ -332,6 +332,9 @@ article.columns_teaser_text h2 {
 article.columns_teaser_text div.teaser_block_content {
 	margin: 20px 180px;
 }
+article.columns_teaser_text div.teaser_block_content img {
+	height: 100px;
+}
 div.teaser_block_content h3, div.teaser_block_content p, div.teaser_block_content button {
 	margin-left: 0px;
 	margin-right: 0px;

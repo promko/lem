@@ -8,13 +8,13 @@ body {
 }
 
 /*.container {
-	width: 100%;
+        width: 100%;
 }*/
 /*INDICATORS*/
 /*#left_Indikator {
-	position: fixed;
-	top: 300px;
-	left: 0px;
+        position: fixed;
+        top: 300px;
+        left: 0px;
 }*/
 /* line 17, ../sass/newstyle.scss */
 #left_indikator {
@@ -391,25 +391,65 @@ section.teaser div.teaser_left_box img, section.teaser div.teaser_right_box img 
   /*width: 195%;*/
 }
 
-/* line 367, ../sass/newstyle.scss */
-.teaser_left_box img {
-  /*right: 0px;*/
-  /*position: absolute;
-  z-index: -1020;*/
+/*article columns_teaser_text*/
+/* line 368, ../sass/newstyle.scss */
+article.columns_teaser_text .teaser_text_left_block, article.columns_teaser_text .teaser_text_right_block {
+  display: inline-block;
+  height: 805px;
+  background-color: #ffffff;
+  text-align: center;
+  color: #009ee0;
+  overflow: hidden;
+  width: 50%;
+  float: left;
+}
+/* line 378, ../sass/newstyle.scss */
+article.columns_teaser_text h2 {
+  color: #009ee0;
+  text-align: center;
+  font-size: 60px;
+}
+/* line 383, ../sass/newstyle.scss */
+article.columns_teaser_text div.teaser_block_content {
+  margin: 20px 180px;
+}
+/* line 385, ../sass/newstyle.scss */
+article.columns_teaser_text div.teaser_block_content img {
+  height: 100px;
+}
+/* line 388, ../sass/newstyle.scss */
+article.columns_teaser_text div.teaser_block_content h3, article.columns_teaser_text div.teaser_block_content p, article.columns_teaser_text div.teaser_block_content button {
+  margin-left: 0px;
+  margin-right: 0px;
+  color: #009ee0;
+}
+/* line 393, ../sass/newstyle.scss */
+article.columns_teaser_text div.teaser_block_content h3 {
+  font-size: 24px;
+}
+/* line 396, ../sass/newstyle.scss */
+article.columns_teaser_text div.teaser_block_content p {
+  height: 200px;
+  overflow: hidden;
+  font-size: 16px;
+}
+/* line 402, ../sass/newstyle.scss */
+article.columns_teaser_text button {
+  background-color: #ffffff;
+  text-align: center;
+  border: 1px solid #009ee0;
+  line-height: 2em;
+  margin: 60px 0px;
+  font-size: 16px;
 }
 
-/*.teaser_right_box img {
-    left: 690px;
-    position: absolute;
-    z-index: -1010;
-}*/
 /*FOOTER*/
-/* line 381, ../sass/newstyle.scss */
+/* line 415, ../sass/newstyle.scss */
 footer {
   background-color: #009ee0;
   clear: right;
 }
-/* line 384, ../sass/newstyle.scss */
+/* line 418, ../sass/newstyle.scss */
 footer p {
   color: #ffffff;
   font-size: 12px;
