@@ -240,8 +240,8 @@ section.content_top {
 }
 section.content_slider {
     .full_box_video_2 {
-       max-height: 800px;
-       overflow: hidden;
+        max-height: 800px;
+        overflow: hidden;
     }
     /*article slider*/
     article.slider_box {
@@ -415,7 +415,7 @@ section.content_bottom {
     .full_box_video_3 {
         max-height: 800px;
         overflow: hidden;
-        
+
         .video_button {
             position: relative;
             img {
@@ -431,14 +431,50 @@ section.content_bottom {
         /*height: 805px;*/
         .mail_box {
             background-image: url('../images/Newsletter_background.jpg');
+            background-color: #009ee0;
             background-size: 100%;
             background-position: right center;
             background-repeat: no-repeat;
+            height: 200px;
             h3 {
                 font-size: 24px;
+                font-weight: bold;
                 text-align: center;
                 color: #ffffff;
                 margin: 0px;
+                padding: 38px 0px 0px 0px;
+            }
+            form {
+                padding: 15px 0px 30px 0px;
+                text-align: center; 
+                input {
+                    line-height: 46px;
+                    vertical-align: central;
+                    margin: 0px 2px;
+                    padding: 1px 10px;
+                }
+                input[type="text"] {
+                    width: 220px;
+                    font-size: 14px;
+                    color: #7e7f7f;                               
+                }
+                input[type="submit"] {
+                    width: 263px;
+                    background-image: url('../images/arrow_form.png');
+                    background-size: 6%;
+                    background-position: 95% 50%;                    
+                    background-repeat: no-repeat;
+                    background-color: #009ee0;
+                    color: #ffffff;
+                    text-transform: uppercase;
+                    text-align: left;
+                    font-size: 14px;
+                    letter-spacing: 2px;
+                    border: solid 1px #ffffff; 
+                    padding-top: 0px;
+                    padding-bottom: 0px;
+                    padding-left: 13px;
+                }
             }
         }
     }

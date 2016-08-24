@@ -473,25 +473,65 @@ section.content_bottom .newsletter_modul {
 /* line 432, ../sass/newstyle.scss */
 section.content_bottom .newsletter_modul .mail_box {
   background-image: url("../images/Newsletter_background.jpg");
+  background-color: #009ee0;
   background-size: 100%;
   background-position: right center;
   background-repeat: no-repeat;
+  height: 200px;
 }
-/* line 437, ../sass/newstyle.scss */
+/* line 439, ../sass/newstyle.scss */
 section.content_bottom .newsletter_modul .mail_box h3 {
   font-size: 24px;
+  font-weight: bold;
   text-align: center;
   color: #ffffff;
   margin: 0px;
+  padding: 38px 0px 0px 0px;
+}
+/* line 447, ../sass/newstyle.scss */
+section.content_bottom .newsletter_modul .mail_box form {
+  padding: 15px 0px 30px 0px;
+  text-align: center;
+}
+/* line 450, ../sass/newstyle.scss */
+section.content_bottom .newsletter_modul .mail_box form input {
+  line-height: 46px;
+  vertical-align: central;
+  margin: 0px 2px;
+  padding: 1px 10px;
+}
+/* line 456, ../sass/newstyle.scss */
+section.content_bottom .newsletter_modul .mail_box form input[type="text"] {
+  width: 220px;
+  font-size: 14px;
+  color: #7e7f7f;
+}
+/* line 461, ../sass/newstyle.scss */
+section.content_bottom .newsletter_modul .mail_box form input[type="submit"] {
+  width: 263px;
+  background-image: url("../images/arrow_form.png");
+  background-size: 6%;
+  background-position: 95% 50%;
+  background-repeat: no-repeat;
+  background-color: #009ee0;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 14px;
+  letter-spacing: 2px;
+  border: solid 1px #ffffff;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 13px;
 }
 
 /*FOOTER*/
-/* line 449, ../sass/newstyle.scss */
+/* line 485, ../sass/newstyle.scss */
 footer {
   background-color: #009ee0;
   clear: right;
 }
-/* line 452, ../sass/newstyle.scss */
+/* line 488, ../sass/newstyle.scss */
 footer p {
   color: #ffffff;
   font-size: 12px;
