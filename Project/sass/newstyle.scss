@@ -232,12 +232,7 @@ section.content_top {
 
 
 /*SECTION CONTENT_SLIDER*/
-@mixin div_video {
-    width: 50%;
-    display: inline-block;
-    background-color: white;
-    overflow: hidden;
-}
+
 section.content_slider {
     .full_box_video_2 {
         max-height: 800px;
@@ -255,13 +250,21 @@ section.content_slider {
     }
     article.slider_box {
         .block_text, div.video {
-            @include div_video;
+            width: 50%;
+            display: inline-block;
+            background-color: white;
+            overflow: hidden;
         }
     }
 }
-article.slider_box {
+article.slider_box.right {
     div.video {
         float: right;
+    }
+}
+article.slider_box.left {
+    div.video {
+        float: left;
     }
 }
 /*article.slider_box left {
@@ -269,7 +272,7 @@ article.slider_box {
         float: left;
     }
 }*/
-#slider_block_video {
+.slider_block_video {
     overflow: hidden;
 }
 /*#slider_block_video {
