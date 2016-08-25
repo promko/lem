@@ -247,7 +247,7 @@ section.content_slider {
     article.slider_box {
         position: relative;
         overflow: hidden;
-        height: 805px;
+        height: 800px;
     }
     article.slider_box {
         .block_text, div.video {
@@ -293,13 +293,22 @@ article.slider_box {
         }
     }
 }
+div.slider_list {
 
-ul.slider_data {
-    text-align: center;
-    margin-bottom: 150px;
-    line-height: 2em;
+    ul.slider_data {
+        display: inline-block;
+        text-align: right;
+        margin-bottom: 150px;
+        line-height: 2em;
+    }
+    ul.slider_value {
+        display: inline-block;
+        text-align: left;
+        margin-bottom: 150px;
+        line-height: 2em;
+    }
+
 }
-
 $font12pt: 12pt;
 
 span.data {
@@ -339,7 +348,7 @@ article.full_box_blue {
 
 /*SECTION CONTENT_TEASER*/
 .columns_teaser {
-    height: 805px;
+    height: 800px;
 }
 article.columns_teaser {
     overflow: hidden;
@@ -366,7 +375,7 @@ section.teaser {
 
 /*article columns_teaser_text*/
 article.columns_teaser_text {
-    height: 805px;
+    height: 825px;
     overflow: hidden;
     .teaser_text_left_block,  .teaser_text_right_block {
         display: inline-block;
@@ -415,7 +424,9 @@ section.content_bottom {
     .full_box_video_3 {
         max-height: 800px;
         overflow: hidden;
-
+        img#video_3 {
+            height: 805px;
+        }
         .video_button {
             position: relative;
             img {
@@ -425,7 +436,6 @@ section.content_bottom {
                 z-index: 1000;
             }
         }
-
     }
     .newsletter_modul {
         /*height: 805px;*/
@@ -442,7 +452,7 @@ section.content_bottom {
                 text-align: center;
                 color: #ffffff;
                 margin: 0px;
-                padding: 38px 0px 0px 0px;
+                padding: 30px 0px 0px 0px;
             }
             form {
                 padding: 15px 0px 30px 0px;
@@ -487,7 +497,8 @@ section.content_bottom {
         h2 {
             font-size: 60px;
             /*font-weight: bolder;*/
-            margin: 240px 0px 0px 0px;
+            margin: 0px 0px 0px 0px;
+            padding-top: 240px;
         }
         p {
             font-size: 16px;
@@ -495,15 +506,17 @@ section.content_bottom {
             margin-top: 7px;
         }
         .bottom_teaser {
-            margin-bottom: 100px;
+            margin-top: 47px;
             img {
-                width: 189px;
+                width: 12.5%;
             }
         }
         .top-link {
             text-align: right;
+            margin-top: 10px;
             img {
-                width: 50px;
+                width: 4%;
+                margin-right: 30px;
             }
         }
     } 
