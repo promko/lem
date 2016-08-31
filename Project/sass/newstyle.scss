@@ -68,9 +68,14 @@ section.content_top {
     top: 90px;
     left: 160px;
 }*/
+/*.header {
+    position: absolute;
+    z-index: 2000;
+}*/
 nav {
     .header_logo {
         position: absolute;
+        z-index: 1300;
         top: 90px;
         left: 120px;
     }
@@ -83,6 +88,7 @@ div.header_logo {
 
 ul.header_nav {
     position: absolute;
+    z-index: 1300;
     top: 90px;
     right: 120px;
 }
@@ -159,6 +165,7 @@ ul.header_nav {
 
 .header_title {
     position: absolute;
+    z-index: 1300;
     top: 455px;
     left: 120px;
     h1, h2 {
@@ -180,12 +187,20 @@ ul.header_nav {
 }
 .top_teaser {
     position: absolute;
+    z-index: 1300;
     top: 595px;
     left: 990px;
     a {
         img {
             width: 75%;
         }
+    }
+}
+.opacity_layer {
+    position: absolute;
+    /*z-index: 1299;*/
+    img {
+        opacity: 1;
     }
 }
 
