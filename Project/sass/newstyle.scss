@@ -1,5 +1,21 @@
 /*GENERAL STYLES*/
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800';
+
+@mixin centerer($horizontal: true, $vertical: true) {
+    position: absolute;
+    @if ($horizontal and $vertical) {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    } @else if ($horizontal) {
+        left: 50%;
+        transform: translate(-50%, 0);
+    } @else if ($vertical) {
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+}
+
 body {
     font-family: "Open Sans", sans-serif;
     font-size: 100%;
@@ -419,9 +435,10 @@ article.columns_teaser {
     width: 50%;    
     float: left;
     .teaser_box_label {
-        position: absolute;
-        top: 31.5%;
-        left: 16%;
+        /*        position: absolute;
+                top: 31.5%;
+                left: 16%;*/
+        @include centerer(true, true);
         color: white;
         text-align: center;
         h2 {
