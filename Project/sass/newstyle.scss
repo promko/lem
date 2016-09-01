@@ -1,11 +1,7 @@
 /*GENERAL STYLES*/
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800';
 
-$color1: #ffffff; // white
-$color2: #009ee0; // blue
-$color3: #000000; // black
-$color4: #7e7f7f; // grey
-$color5: #7e7f7f; // dark grey
+@import "partials/variables";
 
 @mixin centerer($horizontal: true, $vertical: true) {
     position: absolute;

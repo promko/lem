@@ -1,0 +1,92 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 1, 2016, 10:03:04 PM
+    Author     : roman
+*/
+
+@import "compass";
+@import "susy";
+@import "susyone";
+@import "partials/variables";
+
+$container-style: fluid; //static;
+@include border-box-sizing;
+
+
+// width height
+@mixin maintain-ratio($ratio: 1 1) {
+  @if length($ratio) < 2 or length($ratio) > 2 {
+    @warn "$ratio must be a list with two values.";
+  }
+
+  $width: 100%;
+  $height: percentage(nth($ratio, 2) / nth($ratio, 1));
+  
+  width: $width;
+  height: 0;
+  padding-bottom: $height;
+}
+
+main {
+    @include container;
+    @include susy-grid-background;
+    
+}
+
+.blueBox {
+    @include maintain-ratio($widthPSD 345);
+    background-color: $color2;
+    border-top: 1px solid $color6;
+}
+
+.video {
+    @include maintain-ratio($widthPSD 1252-346);
+    background-color: green;
+}
+
+.blueText {
+    @include maintain-ratio($widthPSD 1635-1252);
+    background-color: white;
+}
+
+.werbung {
+    @include maintain-ratio($widthPSD 800); // actually 2387-1635
+}
+
+.blue {
+    background-color: $color2;
+}
+
+.white {
+    background-color: white;
+}
+
+.produkteLink {
+    @include maintain-ratio($widthPSD 300);
+    background-color: $color2;
+    border-top: 1px solid white;
+}
+
+.photos {
+    @include maintain-ratio($widthPSD 5263-4513);
+    background-color: white;
+}
+
+.newsletter {
+    @include maintain-ratio($widthPSD 200);
+    background-color: $color2;
+}
+
+.kontakt {
+    @include maintain-ratio($widthPSD 6197-5463);
+    background-color: white;
+}
+
+footer {
+    @include maintain-ratio($widthPSD 60);
+    background-color: $color2;
+}
