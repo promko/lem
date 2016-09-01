@@ -285,13 +285,16 @@ section.content_slider {
 article.slider_box.right {
     div.video {
         float: right;
+        position: relative;
         div.video_button {
-            position: relative;
+            /*            position: relative;*/
+            /*@include centerer(true, true);*/
             img {
-                position: absolute;
-                bottom: 400px;
-                left: 345px;
-                z-index: 1001;
+                /*position: absolute;
+                   bottom: 400px;
+                   left: 345px;*/
+                @include centerer(true, true);
+                /*z-index: 1001;*/
             }
         }
         div.speak_1 {
@@ -308,13 +311,15 @@ article.slider_box.right {
 article.slider_box.left {
     div.video {
         float: left;
+        position: relative;
         div.video_button {
-            position: relative;
+            /*position: relative;*/
             img {
-                position: absolute;
-                bottom: 400px;
-                left: 345px;
-                z-index: 1001;
+                /*                position: absolute;
+                                bottom: 400px;
+                                left: 345px;
+                                z-index: 1001;*/
+                @include centerer(true, true);
             }
         }
         div.speak_2 {
@@ -349,6 +354,7 @@ article.slider_box {
         left: -310px;
     }
     div.block_text {
+        /*position: relative;*/
         p {
             margin: 180px 120px 115px 120px;
             color: $color3;
@@ -363,6 +369,7 @@ article.slider_box {
 }
 div.slider_list {
     padding-left: 262px;
+/*@include centerer(true, false);*/
     ul.slider_data {
         display: inline-block;
         text-align: right;
@@ -494,7 +501,7 @@ section.teaser {
 article.columns_teaser_text {
     height: 825px;
     overflow: hidden;
-    .teaser_text_left_block,  .teaser_text_right_block {
+    .teaser_text_left_block,  .teaser_text_right_block {        
         display: inline-block;
         background-color: $color1;
         text-align: center;
@@ -509,7 +516,7 @@ article.columns_teaser_text {
         font-size: 60px;
     }
     div.teaser_block_content {
-        margin: 20px 180px;
+        margin: 20px 180px;      
         img {
             height: 100px;
         }
@@ -539,18 +546,19 @@ article.columns_teaser_text {
 }
 section.content_bottom {
     .full_box_video_3 {
+        position: relative;
         max-height: 800px;
         overflow: hidden;
         img#video_3 {
             height: 805px;
         }
         .video_button {
-            position: relative;
+            @include centerer(true, true);
             img {
-                position: absolute;
-                bottom: 315px;
-                left: 750px;
-                z-index: 1000;
+                /*              position: absolute;
+                                bottom: 315px;
+                                left: 750px;
+                                z-index: 1000;*/
             }
         }
     }
