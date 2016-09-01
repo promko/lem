@@ -32,20 +32,16 @@ body {
         width: 100%;
 }*/
 /*INDICATORS*/
-/*#left_Indikator {
-        position: fixed;
-        top: 300px;
-        left: 0px;
-}*/
+
 #left_indikator {
     position: fixed;
-    top: 300px;
+    top: 305px;
     left: 0px;
 }
 
 #right_indikator {
     position: fixed;
-    top: 290px;
+    top: 285px;
     right: 0px;
 }
 
@@ -89,40 +85,39 @@ nav {
     .header_logo {
         position: absolute;
         z-index: 1300;
-        top: 90px;
-        left: 120px;
+        top: 60px;
+        left: 130px;
         img {
-            height: 42px;
+            height: 35px;
         }
     }
     ul.header_nav {
         position: absolute;
         z-index: 1300;
-        top: 90px;
-        right: 120px;
+        top: 50px;
+        right: 138px;
         li {
             /*float: left;*/
             display: inline-block;
-            height: 47px;
-            margin: 0px 15px 0px 8px;
+            height: 40px;
+            margin: 0px 10px 0px 3px;
             select {
                 /*float: right;*/
                 display: inline-block;
-                height: 47px;
-                margin-left: 8px;
+                height: 40px;                
                 border-style: none;
                 background-color: transparent;
                 vertical-align: center;
-                font-size: 125%;
+                font-size: 110%;
                 font-weight: 300;
                 color: $color3;
                 padding-right: 5px;
-                margin-left: 5px;
+                margin-left: 8px;
                 width: 150%;
                 -webkit-appearance: none;
                 background-image: url('../images/arrow_language.png');
-                background-size: 31%;
-                background-position: right center;
+                background-size: 20%;
+                background-position: 70% 50%;
                 background-repeat: no-repeat;
                 line-height: 1em;
                 /* for FF */
@@ -147,12 +142,13 @@ nav {
         a {
             display: block;
             color: $color3;
-            line-height: 47px;
-            font-size: 116%;
+            line-height: 40px;
+            font-size: 105%;
+            letter-spacing: -0.8px;
             /*font-weight: 330;*/
             text-align: center;
-            padding-left: 17px;
-            padding-right: 17px;
+            padding-left: 16px;
+            padding-right: 16px;
             &:hover {
                 border-style: solid;
                 border-radius: 7px;
@@ -161,35 +157,42 @@ nav {
                 border-color: $color3;
             }
         }
+/*        li.selected {
+            border-style: solid;
+            border-radius: 7px;
+            border-style: solid;
+            border-width: 2px;
+            border-color: $color3;
+        }*/
     }
 }
 
 .header_title {
     position: absolute;
     z-index: 1300;
-    top: 455px;
-    left: 120px;
+    top: 458px;
+    left: 130px;
     h1, h2 {
         color: $color1;
     }
     h1 {
-        font-size: 85px;
+        font-size: 80px;
         font-weight: 700;
-        letter-spacing: -3px;
-        line-height: 1em;
-        margin-bottom: 12px;
+        letter-spacing: -0.6px;
+        line-height: 0.99em;
+        margin-bottom: 13px;
     }
     h2 {
         font-size: 24px;
         font-weight: 500;
-        letter-spacing: -1px;
+        letter-spacing: -0.5px;
         margin: 0px;
     }
 }
 .top_teaser {
     position: absolute;
     z-index: 1300;
-    top: 595px;
+    top: 587px;
     left: 990px;
     a {
         img {
@@ -356,7 +359,9 @@ article.slider_box {
     div.block_text {
         /*position: relative;*/
         p {
-            margin: 180px 120px 115px 120px;
+            /*margin: 180px 120px 115px 120px;*/
+            width: 70%;
+            margin: 22.5% auto 14.375%;
             color: $color3;
             font-size: 24px;
             font-style: italic;
@@ -368,15 +373,20 @@ article.slider_box {
     }
 }
 div.slider_list {
-    padding-left: 262px;
-/*@include centerer(true, false);*/
+    /*    padding-left: 262px;*/
+    margin-left: auto;
+    /*width: 50%;*/
+    margin-right: auto;    
+    text-align: center;
+
+    /*@include centerer(true, false);*/
     ul.slider_data {
         display: inline-block;
         text-align: right;
         color: $color4;
         font-size: 16px;
         line-height: 2em;
-        margin-bottom: 150px;
+        /*        margin-bottom: 150px;*/
         padding-right: 12px;
     }
     ul.slider_value {
@@ -384,7 +394,7 @@ div.slider_list {
         text-align: left;
         font-size: 16px;
         line-height: 2em;
-        margin-bottom: 150px;
+        /*        margin-bottom: 150px;*/
         padding-left: 12px;
     }
 
