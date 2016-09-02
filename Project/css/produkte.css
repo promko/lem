@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -16,6 +17,15 @@ and open the template in the editor.
     Created on : Sep 1, 2016, 11:11:54 PM
     Author     : roman
 */
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2 ╨▓╨╡╤А 2016, 2:19:53
+    Author     : Irusya
+*/
 /* line 14, ../sass/susy/language/susyone/_grid.scss */
 * {
   -moz-box-sizing: border-box;
@@ -23,7 +33,7 @@ and open the template in the editor.
   box-sizing: border-box;
 }
 
-/* line 34, ../sass/produkte.scss */
+/* line 23, ../sass/produkte.scss */
 main {
   *zoom: 1;
   padding-left: 1em;
@@ -46,14 +56,14 @@ main {
   -webkit-background-clip: content;
   background-clip: content-box;
 }
-/* line 38, ../../../../../lib/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
 main:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 40, ../sass/produkte.scss */
+/* line 29, ../sass/produkte.scss */
 .blueBox {
   width: 100%;
   height: 0;
@@ -62,7 +72,7 @@ main:after {
   border-top: 1px solid #0fa5e2;
 }
 
-/* line 46, ../sass/produkte.scss */
+/* line 35, ../sass/produkte.scss */
 .video {
   width: 100%;
   height: 0;
@@ -70,7 +80,7 @@ main:after {
   background-color: green;
 }
 
-/* line 51, ../sass/produkte.scss */
+/* line 40, ../sass/produkte.scss */
 .blueText {
   width: 100%;
   height: 0;
@@ -78,24 +88,24 @@ main:after {
   background-color: white;
 }
 
-/* line 56, ../sass/produkte.scss */
+/* line 45, ../sass/produkte.scss */
 .werbung {
   width: 100%;
   height: 0;
   padding-bottom: 50%;
 }
 
-/* line 60, ../sass/produkte.scss */
+/* line 49, ../sass/produkte.scss */
 .blue {
   background-color: #009ee0;
 }
 
-/* line 64, ../sass/produkte.scss */
+/* line 53, ../sass/produkte.scss */
 .white {
   background-color: white;
 }
 
-/* line 68, ../sass/produkte.scss */
+/* line 57, ../sass/produkte.scss */
 .produkteLink {
   width: 100%;
   height: 0;
@@ -104,7 +114,7 @@ main:after {
   border-top: 1px solid white;
 }
 
-/* line 74, ../sass/produkte.scss */
+/* line 63, ../sass/produkte.scss */
 .photos {
   width: 100%;
   height: 0;
@@ -112,7 +122,7 @@ main:after {
   background-color: white;
 }
 
-/* line 79, ../sass/produkte.scss */
+/* line 68, ../sass/produkte.scss */
 .newsletter {
   width: 100%;
   height: 0;
@@ -120,7 +130,7 @@ main:after {
   background-color: #009ee0;
 }
 
-/* line 84, ../sass/produkte.scss */
+/* line 73, ../sass/produkte.scss */
 .kontakt {
   width: 100%;
   height: 0;
@@ -128,7 +138,7 @@ main:after {
   background-color: white;
 }
 
-/* line 89, ../sass/produkte.scss */
+/* line 78, ../sass/produkte.scss */
 footer {
   width: 100%;
   height: 0;

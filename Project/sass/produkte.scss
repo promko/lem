@@ -12,24 +12,13 @@ and open the template in the editor.
 @import "susy";
 @import "susyone";
 @import "partials/variables";
+@import "partials/mixins";
 
 $container-style: fluid; //static;
 @include border-box-sizing;
 
 
-// width height
-@mixin maintain-ratio($ratio: 1 1) {
-  @if length($ratio) < 2 or length($ratio) > 2 {
-    @warn "$ratio must be a list with two values.";
-  }
 
-  $width: 100%;
-  $height: percentage(nth($ratio, 2) / nth($ratio, 1));
-  
-  width: $width;
-  height: 0;
-  padding-bottom: $height;
-}
 
 main {
     @include container;
