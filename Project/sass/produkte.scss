@@ -14,16 +14,33 @@ and open the template in the editor.
 @import "partials/variables";
 @import "partials/mixins";
 
+/*$susy: (
+  columns: 12,
+  container: 100em,
+  gutters: 0.5em,
+  global-box-sizing: border-box,
+  debug: (image: show),
+  grid-padding: 0
+);*/
+$container-width: 100em;
+$total-columns : 48; // a 12-column grid
+//$column-width : 5em;
+// each column is 5em wide
+$gutter-width : 0.25em;
+// 1em gutters between columns
+$grid-padding: 0; // grid-padding 
+
 $container-style: fluid; //static;
 @include border-box-sizing;
 
 
 
 
-main {
+body {
     @include container;
     @include susy-grid-background;
-    
+    padding: 0;
+    margin: 0;
 }
 
 .blueBox {
@@ -61,10 +78,27 @@ main {
 }
 
 .photos {
-    @include maintain-ratio($widthPSD 5263-4513);
+    //@include maintain-ratio($widthPSD 5263-4513);
     background-color: white;
+    /*@include susy-grid-background;*/
+    @include clearfix; 
+    padding: gutter(12) 0 0 0;
 }
+/*@include with-grid-settings(3, 1000px, 9px, 0) {
+    .photos {
+        @include container;
+        @include susy-grid-background;
+    }
+}*/
 
+.photo {
+    @include gallery(16 of 48);
+    margin-bottom: gutter(12);
+    //@include span-columns(4);
+}
+/*.photo-last {
+    @include span-columns(4 omega);
+}*/
 .newsletter {
     @include maintain-ratio($widthPSD 200);
     background-color: $color2;
@@ -77,5 +111,5 @@ main {
 
 footer {
     @include maintain-ratio($widthPSD 60);
-    background-color: $color2;
+    background-color: $color2;    
 }
