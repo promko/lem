@@ -1,0 +1,111 @@
+/*GENERAL STYLES*/
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800';
+
+@import "compass";
+@import "susy";
+@import "susyone";
+@import "partials/variables";
+@import "partials/mixins";
+
+$total-columns: 12;
+$grid-padding: 0; // grid-padding
+$gutter-width: 0.001em;
+
+$container-style: fluid; //static;
+@include border-box-sizing;
+
+//GENERAL
+body {
+    @include container;
+    //@include clearfix;
+    @include susy-grid-background;
+    font-family: "Open Sans", sans-serif;
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+
+}
+
+//SECTIONS
+.sec_1_part_1 {
+    @include maintain-ratio($widthPSD 800);
+    background-color: red;    
+}
+.sec_1_part_2 {
+    @include maintain-ratio($widthPSD 680);
+    background-color: $color1;       
+}
+.sec_2_part_1, {
+    @include maintain-ratio($widthPSD 800);
+    background-color: $color4; 
+}
+.sec_2_part_2 {
+    @include maintain-ratio($widthPSD 800);    
+    //@include clearfix;
+    /*padding: gutter(12) 0 0 0;*/
+    //background-color: yellow; 
+    //@include span(12 of 12);     
+   .slide_text {              
+        //@include gallery(24 of 48);      
+        //width: 50%;
+        //margin-bottom: gutter(12);
+        //float: left;
+        background-color: yellowgreen;
+        @include span(6 of 12);        
+    }
+    .slide_video { 
+        @include span(6 omega of 12);
+        //@include maintain-ratio($widthPSD/2 800);
+        //@include gallery(24 of 48);
+        //width: 50%;
+        //margin-bottom: gutter(12);
+        //float: left;
+        background-color: green;
+        
+        //@include span(6 of 12);
+        //@include last;
+        //@include span-columns(4);    
+    }
+}
+.sec_3 {
+    @include maintain-ratio($widthPSD 1040);
+    //@include span(6 of 12);
+    //@include last;//ддя останньої колонки
+    background-color: $color2; 
+}
+.sec_4_part_1 {
+    @include maintain-ratio($widthPSD 800);
+    background-color: $color5; 
+}
+.sec_4_part_2 {
+    @include maintain-ratio($widthPSD 825);
+    background-color: $color1; 
+}
+.sec_5_part_1 {
+    @include maintain-ratio($widthPSD 800);
+    background-color: $color5; 
+}
+.sec_5_part_2 {
+    @include maintain-ratio($widthPSD 200);
+    background-color: $color3; 
+}
+.sec_5_part_2 {
+    @include maintain-ratio($widthPSD 740);
+    background-color: $color1; 
+}
+
+//FOOTER
+footer {
+    @include maintain-ratio($widthPSD 60);
+    background-color: $color2; 
+    position: relative;
+    p {
+        @include centerer;
+        font-size: 0.75em;
+        color: $color1;        
+        text-align: center; 
+        margin: 0;
+    }
+}
+
+

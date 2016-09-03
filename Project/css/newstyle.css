@@ -218,7 +218,7 @@ nav ul.header_nav a:hover {
 }
 /* line 185, ../sass/newstyle.scss */
 .top_teaser a img {
-  height: 75%;
+  width: 75%;
 }
 
 /* line 190, ../sass/newstyle.scss */
