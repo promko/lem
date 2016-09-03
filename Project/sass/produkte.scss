@@ -11,6 +11,7 @@ and open the template in the editor.
 @import "compass";
 @import "susy";
 @import "susyone";
+@import "partials/common";
 @import "partials/variables";
 @import "partials/mixins";
 
@@ -38,9 +39,7 @@ $container-style: fluid; //static;
 
 body {
     @include container;
-    @include susy-grid-background;
-    padding: 0;
-    margin: 0;
+    //@include susy-grid-background;
 }
 
 .blueBox {
@@ -92,16 +91,148 @@ body {
 }*/
 
 .photo {
-    @include gallery(16 of 48);
     margin-bottom: gutter(12);
+
+    /*    @media (max-width: $screen-smartphone-xxxs) {
+            //@include gallery(48 of 48);
+            @include maintain-ratio($widthPSD $widthPSD);
+        }*/
+    @media (max-width: $screen-tablet) {
+        @include gallery(24 of 48);
+    }
+    @media (min-width: $screen-tablet-min) {
+        @include gallery(16 of 48);
+    }
+
+
     //@include span-columns(4);
 }
 /*.photo-last {
     @include span-columns(4 omega);
 }*/
 .newsletter {
+    position: relative;
     @include maintain-ratio($widthPSD 200);
-    background-color: $color2;
+    background-image: url("../images/Newsletter_background.jpg");
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+    //background-color: $color2;
+    p {
+        text-transform: uppercase;
+        //font-size: 1.17em;
+        font-weight: bold;
+        color: $color1;
+        text-align: center;
+        white-space: nowrap;
+        @include font-size($p-font-sizes);
+    }
+    //@include susy-grid-background;
+}
+.centered {
+    //@include susy-grid-background;
+    //@include squish(10,10,28);
+    @include prefix(10, 48);
+    @include suffix(10, 48);
+    //@include span-columns(28, 48);
+    @include centerer;
+
+    input {
+        @media (max-width: $screen-tablet) {
+            @include gallery(24 of 48);
+        }
+        @media (min-width: $screen-tablet-min) {
+            @include gallery(12 of 48);
+        }
+        /*@include gallery(12 of 48);*/
+        //@include span-columns(14,48)
+    }
+/*    @media only screen and (min-width: $screen-tablet-min) {
+        form {
+            padding: 15px 0px 30px 0px;
+            text-align: center; 
+            input {
+                line-height: 46px;
+                vertical-align: central;
+                margin: 0px 2px;
+                padding: 1px 10px;
+            }
+            input[type="text"] {
+                width: 220px;
+                font-size: 14px;
+                color: $color2;                               
+            }
+            input[type="submit"] {
+                width: 263px;
+                background-image: url('../images/arrow_form.png');
+                background-size: 6%;
+                background-position: 95% 50%;                    
+                background-repeat: no-repeat;
+                background-color: $color2;
+                color: $color1;
+                text-transform: uppercase;
+                text-align: left;
+                font-size: 14px;
+                letter-spacing: 2px;
+                border: solid 1px $color1; 
+                padding-top: 0px;
+                padding-bottom: 0px;
+                padding-left: 13px;
+                cursor: pointer;
+            }
+        }
+    }*/
+
+
+}
+.mail_box {
+    background-image: url("../images/Newsletter_background.jpg");
+    background-color: #009ee0;
+    background-size: 100%;
+    background-position: right center;
+    background-repeat: no-repeat;
+    height: 200px;
+    h3 {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        color: #ffffff;
+        margin: 0px;
+        padding: 30px 0px 0px 0px;
+    }
+    form {
+        padding: 15px 0px 30px 0px;
+        text-align: center; 
+        input {
+            line-height: 46px;
+            vertical-align: central;
+            margin: 0px 2px;
+            padding: 1px 10px;
+        }
+        input[type="text"] {
+            width: 220px;
+            font-size: 14px;
+            color: $color2;                               
+        }
+        input[type="submit"] {
+            width: 263px;
+            background-image: url('../images/arrow_form.png');
+            background-size: 6%;
+            background-position: 95% 50%;                    
+            background-repeat: no-repeat;
+            background-color: $color2;
+            color: $color1;
+            text-transform: uppercase;
+            text-align: left;
+            font-size: 14px;
+            letter-spacing: 2px;
+            border: solid 1px $color1; 
+            padding-top: 0px;
+            padding-bottom: 0px;
+            padding-left: 13px;
+            cursor: pointer;
+        }
+    }
 }
 
 .kontakt {

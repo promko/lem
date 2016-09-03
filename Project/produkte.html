@@ -6,7 +6,8 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <link rel="shortcut icon" href="favicon.png" type="image/png">
+        <title>Lemken - Produkte</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/produkte.css">
@@ -28,7 +29,28 @@ and open the template in the editor.
                 <img class="photo" src="images/mak_3.jpg" alt="Ausstatung"/>
                 <img class="photo" src="images/mak_3.jpg" alt="Ausstatung"/>
             </article>
-            <article class="newsletter"></article>
+            <article class="newsletter">
+                <div class="centered">
+                    <p>jetzt newsletter abonnieren und regelmäßig<br>neuigkeiten zum thema pflanzenschutz bei lemken erhalten</p>
+                    <form id="newsletter_form" action="#" method="POST">
+                        <input type="text" placeholder="Ihr Vorname" name="vorname">
+                        <input type="text" placeholder="Ihr Name" name="name">
+                        <input type="text" placeholder="Ihre E-Mail-Adresse" name="mail">
+                        <input type="submit" value="newsletter abonnieren">
+                    </form>
+                </div>
+
+
+                <!--                <div class="mail_box">
+                                    <h3>jetzt newsletter abonnieren und regelmäßig<br>neuigkeiten zum thema pflanzenschutz bei lemken erhalten</h3>
+                                    <form id="newsletter_form" action="" method="POST">
+                                        <input type="text" placeholder="Ihr Vorname" name="vorname">
+                                        <input type="text" placeholder="Ihr Name" name="name">
+                                        <input type="text" placeholder="Ihre E-Mail-Adresse" name="mail">
+                                        <input type="submit" value="newslatter abonnieren">
+                                    </form>
+                                </div>-->
+            </article>
             <article class="kontakt"></article>
         </main>
         <footer></footer>

@@ -1,0 +1,18 @@
+// Smartphone
+$screen-smartphone-xxxs: 200px;
+$screen-smartphone-xxxs-min: 200px + 1;
+
+$screen-smartphone-xxs: 320px;
+$screen-smartphone-xs: 540px;
+$screen-smartphone: 767px;
+$screen-smartphone-min: $screen-smartphone + 1;
+
+// Tablet
+$screen-tablet: 991px;
+$screen-tablet-min: $screen-tablet + 1;
+
+// Desktop
+$screen-desktop: 1299px;
+$screen-desktop-min: $screen-desktop + 1;
+
+
