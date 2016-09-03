@@ -7,6 +7,7 @@ and open the template in the editor.
     Created on : Sep 1, 2016, 10:03:04 PM
     Author     : roman
 */
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800';
 
 @import "compass";
 @import "susy";
@@ -57,8 +58,8 @@ body {
         width: 7.5%;
         @include centerer;
     }
-/*    @include maintain-ratio($widthPSD 1252-346);
-    background-color: green;*/
+    /*    @include maintain-ratio($widthPSD 1252-346);
+        background-color: green;*/
 }
 
 .blueText {
@@ -120,9 +121,9 @@ body {
     position: relative;
     @include maintain-ratio($widthPSD 200);
     background-image: url("../images/Newsletter_background.jpg");
-    background-repeat:no-repeat;
-    background-size:contain;
-    background-position:center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
     //background-color: $color2;
     p {
         text-transform: uppercase;
@@ -132,6 +133,7 @@ body {
         text-align: center;
         white-space: nowrap;
         @include font-size($p-font-sizes);
+        //font-size: 1.5em;
     }
     //@include susy-grid-background;
 }
@@ -140,6 +142,8 @@ body {
     //@include squish(10,10,28);
     @include prefix(10, 48);
     @include suffix(10, 48);
+    //@include prefix(6, 48); 
+    //@include suffix(6, 48);
     //@include span-columns(28, 48);
     @include centerer;
 
@@ -150,44 +154,62 @@ body {
         @media (min-width: $screen-tablet-min) {
             @include gallery(12 of 48);
         }
+        font-family: "Open Sans", sans-serif;
+        font-size: 0.875em;  
+        line-height: 3.125em;
+        color: $color5;            
         /*@include gallery(12 of 48);*/
         //@include span-columns(14,48)
     }
-/*    @media only screen and (min-width: $screen-tablet-min) {
-        form {
-            padding: 15px 0px 30px 0px;
-            text-align: center; 
-            input {
-                line-height: 46px;
-                vertical-align: central;
-                margin: 0px 2px;
-                padding: 1px 10px;
+    input[type="text"] {
+        width: 13.75em;
+    }
+    input[type="submit"] {
+        width: 16.4375em;
+        background-color: $color2;
+        color: $color1;
+        text-transform: uppercase;        
+        border: solid 0.0625em $color1; 
+        background-image: url('../images/arrow_form.png');
+        background-size: 6%;
+        background-position: 95% 50%;                    
+        background-repeat: no-repeat;
+    }
+    /*    @media only screen and (min-width: $screen-tablet-min) {
+            form {
+                padding: 15px 0px 30px 0px;
+                text-align: center; 
+                input {
+                    line-height: 46px;
+                    vertical-align: central;
+                    margin: 0px 2px;
+                    padding: 1px 10px;
+                }
+                input[type="text"] {
+                    width: 220px;
+                    font-size: 14px;
+                    color: $color2;                               
+                }
+                input[type="submit"] {
+                    width: 263px;
+                    background-image: url('../images/arrow_form.png');
+                    background-size: 6%;
+                    background-position: 95% 50%;                    
+                    background-repeat: no-repeat;
+                    background-color: $color2;
+                    color: $color1;
+                    text-transform: uppercase;
+                    text-align: left;
+                    font-size: 14px;
+                    letter-spacing: 2px;
+                    border: solid 1px $color1; 
+                    padding-top: 0px;
+                    padding-bottom: 0px;
+                    padding-left: 13px;
+                    cursor: pointer;
+                }
             }
-            input[type="text"] {
-                width: 220px;
-                font-size: 14px;
-                color: $color2;                               
-            }
-            input[type="submit"] {
-                width: 263px;
-                background-image: url('../images/arrow_form.png');
-                background-size: 6%;
-                background-position: 95% 50%;                    
-                background-repeat: no-repeat;
-                background-color: $color2;
-                color: $color1;
-                text-transform: uppercase;
-                text-align: left;
-                font-size: 14px;
-                letter-spacing: 2px;
-                border: solid 1px $color1; 
-                padding-top: 0px;
-                padding-bottom: 0px;
-                padding-left: 13px;
-                cursor: pointer;
-            }
-        }
-    }*/
+        }*/
 
 
 }
