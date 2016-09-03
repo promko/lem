@@ -49,8 +49,16 @@ body {
 }
 
 .video {
-    @include maintain-ratio($widthPSD 1252-346);
-    background-color: green;
+    position: relative;
+    img {
+        width: 100%
+    }
+    .arrow {
+        width: 7.5%;
+        @include centerer;
+    }
+/*    @include maintain-ratio($widthPSD 1252-346);
+    background-color: green;*/
 }
 
 .blueText {
@@ -107,9 +115,7 @@ body {
 
     //@include span-columns(4);
 }
-/*.photo-last {
-    @include span-columns(4 omega);
-}*/
+
 .newsletter {
     position: relative;
     @include maintain-ratio($widthPSD 200);
