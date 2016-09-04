@@ -25,23 +25,23 @@ $screen-smartphone : 0.8em,
 $screen-tablet : 1em,
 $screen-desktop: 1em,
 );
-$h4-fs24: (
+$p-small-14fs: (
 null  : 0.1em,
-$screen-smartphone-xxxs : 0.3em,
-$screen-smartphone-xxs : 0.6em,
-$screen-smartphone-xs: 0.9em,
-$screen-smartphone : 1.2em,
-$screen-tablet : 1.5em,
-$screen-desktop: 1.5em,
+$screen-smartphone-xxxs : 0.175em,
+$screen-smartphone-xxs : 0.35em,
+$screen-smartphone-xs: 0.525em,
+$screen-smartphone : 0.7em,
+$screen-tablet : 0.875em,
+$screen-desktop: 0.875em,
 );
-$h3-fs50: (
+$h1-fs80: (
 null  : 0.1em,
-$screen-smartphone-xxxs : 0.625em,
-$screen-smartphone-xxs : 1.25em,
-$screen-smartphone-xs: 1.875em,
-$screen-smartphone : 2.5em,
-$screen-tablet : 3.125em,
-$screen-desktop: 3.125em,
+$screen-smartphone-xxxs : 1em,
+$screen-smartphone-xxs : 2em,
+$screen-smartphone-xs: 3em,
+$screen-smartphone : 4em,
+$screen-tablet : 5em,
+$screen-desktop: 5em,
 );
 $h2-fs60: (
 null  : 0.1em,
@@ -52,6 +52,26 @@ $screen-smartphone : 3em,
 $screen-tablet : 3.75em,
 $screen-desktop: 3.75em,
 );
+$h3-fs50: (
+null  : 0.1em,
+$screen-smartphone-xxxs : 0.625em,
+$screen-smartphone-xxs : 1.25em,
+$screen-smartphone-xs: 1.875em,
+$screen-smartphone : 2.5em,
+$screen-tablet : 3.125em,
+$screen-desktop: 3.125em,
+);
+$h4-fs24: (
+null  : 0.1em,
+$screen-smartphone-xxxs : 0.3em,
+$screen-smartphone-xxs : 0.6em,
+$screen-smartphone-xs: 0.9em,
+$screen-smartphone : 1.2em,
+$screen-tablet : 1.5em,
+$screen-desktop: 1.5em,
+);
+
+
 
 //GENERAL
 body {
@@ -172,7 +192,7 @@ body {
             @include gallery(12 of 48);
         }
         font-family: "Open Sans", sans-serif;
-        font-size: 0.875em;  
+        @include font-size($p-small-14fs);
         line-height: 3.125em;
         color: $color5;            
         /*@include gallery(12 of 48);*/
@@ -241,7 +261,7 @@ footer {
     background-color: $color2; 
     position: relative;
     p {
-        @include centerer;
+        @include centerer;        
         font-size: 0.75em;
         color: $color1;        
         text-align: center; 
