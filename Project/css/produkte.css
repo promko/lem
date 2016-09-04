@@ -9,7 +9,71 @@ and open the template in the editor.
     Author     : roman
 */
 @import "https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800";
-@import "https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800";
+/* line 5, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
 /* line 3, ../sass/partials/_common.scss */
 body {
   font-family: "Open Sans", sans-serif;
@@ -50,13 +114,34 @@ and open the template in the editor.
   box-sizing: border-box;
 }
 
-/* line 41, ../sass/produkte.scss */
+/* line 106, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 100%;
+  line-height: 1.5em;
+}
+
+/* line 47, ../sass/produkte.scss */
 body {
   *zoom: 1;
   padding-left: 0;
   padding-right: 0;
   margin-left: auto;
   margin-right: auto;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjNzk3OWU1IiBzdG9wLW9wYWNpdHk9IjAuMjUiLz48c3RvcCBvZmZzZXQ9IjcuODgxNzclIiBzdG9wLWNvbG9yPSIjNGY0ZmRkIiBzdG9wLW9wYWNpdHk9IjAuMjUiLz48c3RvcCBvZmZzZXQ9IjcuODgxNzclIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjxzdG9wIG9mZnNldD0iOC4zNzQzOCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PHN0b3Agb2Zmc2V0PSI4LjM3NDM4JSIgc3RvcC1jb2xvcj0iIzc5NzllNSIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+PHN0b3Agb2Zmc2V0PSIxNi4yNTYxNiUiIHN0b3AtY29sb3I9IiM0ZjRmZGQiIHN0b3Atb3BhY2l0eT0iMC4yNSIvPjxzdG9wIG9mZnNldD0iMTYuMjU2MTYlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjxzdG9wIG9mZnNldD0iMTYuNzQ4NzclIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjxzdG9wIG9mZnNldD0iMTYuNzQ4NzclIiBzdG9wLWNvbG9yPSIjNzk3OWU1IiBzdG9wLW9wYWNpdHk9IjAuMjUiLz48c3RvcCBvZmZzZXQ9IjI0LjYzMDU0JSIgc3RvcC1jb2xvcj0iIzRmNGZkZCIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+PHN0b3Agb2Zmc2V0PSIyNC42MzA1NCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PHN0b3Agb2Zmc2V0PSIyNS4xMjMxNSUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PHN0b3Agb2Zmc2V0PSIyNS4xMjMxNSUiIHN0b3AtY29sb3I9IiM3OTc5ZTUiIHN0b3Atb3BhY2l0eT0iMC4yNSIvPjxzdG9wIG9mZnNldD0iMzMuMDA0OTMlIiBzdG9wLWNvbG9yPSIjNGY0ZmRkIiBzdG9wLW9wYWNpdHk9IjAuMjUiLz48c3RvcCBvZmZzZXQ9IjMzLjAwNDkzJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjMzLjQ5NzU0JSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjMzLjQ5NzU0JSIgc3RvcC1jb2xvcj0iIzc5NzllNSIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+PHN0b3Agb2Zmc2V0PSI0MS4zNzkzMSUiIHN0b3AtY29sb3I9IiM0ZjRmZGQiIHN0b3Atb3BhY2l0eT0iMC4yNSIvPjxzdG9wIG9mZnNldD0iNDEuMzc5MzElIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjxzdG9wIG9mZnNldD0iNDEuODcxOTIlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjxzdG9wIG9mZnNldD0iNDEuODcxOTIlIiBzdG9wLWNvbG9yPSIjNzk3OWU1IiBzdG9wLW9wYWNpdHk9IjAuMjUiLz48c3RvcCBvZmZzZXQ9IjQ5Ljc1MzY5JSIgc3RvcC1jb2xvcj0iIzRmNGZkZCIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+PHN0b3Agb2Zmc2V0PSI0OS43NTM2OSUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PHN0b3Agb2Zmc2V0PSI1MC4yNDYzMSUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PHN0b3Agb2Zmc2V0PSI1MC4yNDYzMSUiIHN0b3AtY29sb3I9IiM3OTc5ZTUiIHN0b3Atb3BhY2l0eT0iMC4yNSIvPjxzdG9wIG9mZnNldD0iNTguMTI4MDglIiBzdG9wLWNvbG9yPSIjNGY0ZmRkIiBzdG9wLW9wYWNpdHk9IjAuMjUiLz48c3RvcCBvZmZzZXQ9IjU4LjEyODA4JSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjU4LjYyMDY5JSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjU4LjYyMDY5JSIgc3RvcC1jb2xvcj0iIzc5NzllNSIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+PHN0b3Agb2Zmc2V0PSI2Ni41MDI0NiUiIHN0b3AtY29sb3I9IiM0ZjRmZGQiIHN0b3Atb3BhY2l0eT0iMC4yNSIvPjxzdG9wIG9mZnNldD0iNjYuNTAyNDYlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjxzdG9wIG9mZnNldD0iNjYuOTk1MDclIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjxzdG9wIG9mZnNldD0iNjYuOTk1MDclIiBzdG9wLWNvbG9yPSIjNzk3OWU1IiBzdG9wLW9wYWNpdHk9IjAuMjUiLz48c3RvcCBvZmZzZXQ9Ijc0Ljg3Njg1JSIgc3RvcC1jb2xvcj0iIzRmNGZkZCIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+PHN0b3Agb2Zmc2V0PSI3NC44NzY4NSUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PHN0b3Agb2Zmc2V0PSI3NS4zNjk0NiUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PHN0b3Agb2Zmc2V0PSI3NS4zNjk0NiUiIHN0b3AtY29sb3I9IiM3OTc5ZTUiIHN0b3Atb3BhY2l0eT0iMC4yNSIvPjxzdG9wIG9mZnNldD0iODMuMjUxMjMlIiBzdG9wLWNvbG9yPSIjNGY0ZmRkIiBzdG9wLW9wYWNpdHk9IjAuMjUiLz48c3RvcCBvZmZzZXQ9IjgzLjI1MTIzJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjgzLjc0Mzg0JSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjgzLjc0Mzg0JSIgc3RvcC1jb2xvcj0iIzc5NzllNSIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+PHN0b3Agb2Zmc2V0PSI5MS42MjU2MiUiIHN0b3AtY29sb3I9IiM0ZjRmZGQiIHN0b3Atb3BhY2l0eT0iMC4yNSIvPjxzdG9wIG9mZnNldD0iOTEuNjI1NjIlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjxzdG9wIG9mZnNldD0iOTIuMTE4MjMlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjxzdG9wIG9mZnNldD0iOTIuMTE4MjMlIiBzdG9wLWNvbG9yPSIjNzk3OWU1IiBzdG9wLW9wYWNpdHk9IjAuMjUiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0ZjRmZGQiIHN0b3Atb3BhY2l0eT0iMC4yNSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, rgba(121, 121, 229, 0.25)), color-stop(7.88177%, rgba(79, 79, 221, 0.25)), color-stop(7.88177%, rgba(0, 0, 0, 0)), color-stop(8.37438%, rgba(0, 0, 0, 0)), color-stop(8.37438%, rgba(121, 121, 229, 0.25)), color-stop(16.25616%, rgba(79, 79, 221, 0.25)), color-stop(16.25616%, rgba(0, 0, 0, 0)), color-stop(16.74877%, rgba(0, 0, 0, 0)), color-stop(16.74877%, rgba(121, 121, 229, 0.25)), color-stop(24.63054%, rgba(79, 79, 221, 0.25)), color-stop(24.63054%, rgba(0, 0, 0, 0)), color-stop(25.12315%, rgba(0, 0, 0, 0)), color-stop(25.12315%, rgba(121, 121, 229, 0.25)), color-stop(33.00493%, rgba(79, 79, 221, 0.25)), color-stop(33.00493%, rgba(0, 0, 0, 0)), color-stop(33.49754%, rgba(0, 0, 0, 0)), color-stop(33.49754%, rgba(121, 121, 229, 0.25)), color-stop(41.37931%, rgba(79, 79, 221, 0.25)), color-stop(41.37931%, rgba(0, 0, 0, 0)), color-stop(41.87192%, rgba(0, 0, 0, 0)), color-stop(41.87192%, rgba(121, 121, 229, 0.25)), color-stop(49.75369%, rgba(79, 79, 221, 0.25)), color-stop(49.75369%, rgba(0, 0, 0, 0)), color-stop(50.24631%, rgba(0, 0, 0, 0)), color-stop(50.24631%, rgba(121, 121, 229, 0.25)), color-stop(58.12808%, rgba(79, 79, 221, 0.25)), color-stop(58.12808%, rgba(0, 0, 0, 0)), color-stop(58.62069%, rgba(0, 0, 0, 0)), color-stop(58.62069%, rgba(121, 121, 229, 0.25)), color-stop(66.50246%, rgba(79, 79, 221, 0.25)), color-stop(66.50246%, rgba(0, 0, 0, 0)), color-stop(66.99507%, rgba(0, 0, 0, 0)), color-stop(66.99507%, rgba(121, 121, 229, 0.25)), color-stop(74.87685%, rgba(79, 79, 221, 0.25)), color-stop(74.87685%, rgba(0, 0, 0, 0)), color-stop(75.36946%, rgba(0, 0, 0, 0)), color-stop(75.36946%, rgba(121, 121, 229, 0.25)), color-stop(83.25123%, rgba(79, 79, 221, 0.25)), color-stop(83.25123%, rgba(0, 0, 0, 0)), color-stop(83.74384%, rgba(0, 0, 0, 0)), color-stop(83.74384%, rgba(121, 121, 229, 0.25)), color-stop(91.62562%, rgba(79, 79, 221, 0.25)), color-stop(91.62562%, rgba(0, 0, 0, 0)), color-stop(92.11823%, rgba(0, 0, 0, 0)), color-stop(92.11823%, rgba(121, 121, 229, 0.25)), color-stop(100%, rgba(79, 79, 221, 0.25)), color-stop(100%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(121, 121, 229, 0.25) 0%, rgba(79, 79, 221, 0.25) 7.88177%, rgba(0, 0, 0, 0) 7.88177%, rgba(0, 0, 0, 0) 8.37438%, rgba(121, 121, 229, 0.25) 8.37438%, rgba(79, 79, 221, 0.25) 16.25616%, rgba(0, 0, 0, 0) 16.25616%, rgba(0, 0, 0, 0) 16.74877%, rgba(121, 121, 229, 0.25) 16.74877%, rgba(79, 79, 221, 0.25) 24.63054%, rgba(0, 0, 0, 0) 24.63054%, rgba(0, 0, 0, 0) 25.12315%, rgba(121, 121, 229, 0.25) 25.12315%, rgba(79, 79, 221, 0.25) 33.00493%, rgba(0, 0, 0, 0) 33.00493%, rgba(0, 0, 0, 0) 33.49754%, rgba(121, 121, 229, 0.25) 33.49754%, rgba(79, 79, 221, 0.25) 41.37931%, rgba(0, 0, 0, 0) 41.37931%, rgba(0, 0, 0, 0) 41.87192%, rgba(121, 121, 229, 0.25) 41.87192%, rgba(79, 79, 221, 0.25) 49.75369%, rgba(0, 0, 0, 0) 49.75369%, rgba(0, 0, 0, 0) 50.24631%, rgba(121, 121, 229, 0.25) 50.24631%, rgba(79, 79, 221, 0.25) 58.12808%, rgba(0, 0, 0, 0) 58.12808%, rgba(0, 0, 0, 0) 58.62069%, rgba(121, 121, 229, 0.25) 58.62069%, rgba(79, 79, 221, 0.25) 66.50246%, rgba(0, 0, 0, 0) 66.50246%, rgba(0, 0, 0, 0) 66.99507%, rgba(121, 121, 229, 0.25) 66.99507%, rgba(79, 79, 221, 0.25) 74.87685%, rgba(0, 0, 0, 0) 74.87685%, rgba(0, 0, 0, 0) 75.36946%, rgba(121, 121, 229, 0.25) 75.36946%, rgba(79, 79, 221, 0.25) 83.25123%, rgba(0, 0, 0, 0) 83.25123%, rgba(0, 0, 0, 0) 83.74384%, rgba(121, 121, 229, 0.25) 83.74384%, rgba(79, 79, 221, 0.25) 91.62562%, rgba(0, 0, 0, 0) 91.62562%, rgba(0, 0, 0, 0) 92.11823%, rgba(121, 121, 229, 0.25) 92.11823%, rgba(79, 79, 221, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(121, 121, 229, 0.25) 0%, rgba(79, 79, 221, 0.25) 7.88177%, rgba(0, 0, 0, 0) 7.88177%, rgba(0, 0, 0, 0) 8.37438%, rgba(121, 121, 229, 0.25) 8.37438%, rgba(79, 79, 221, 0.25) 16.25616%, rgba(0, 0, 0, 0) 16.25616%, rgba(0, 0, 0, 0) 16.74877%, rgba(121, 121, 229, 0.25) 16.74877%, rgba(79, 79, 221, 0.25) 24.63054%, rgba(0, 0, 0, 0) 24.63054%, rgba(0, 0, 0, 0) 25.12315%, rgba(121, 121, 229, 0.25) 25.12315%, rgba(79, 79, 221, 0.25) 33.00493%, rgba(0, 0, 0, 0) 33.00493%, rgba(0, 0, 0, 0) 33.49754%, rgba(121, 121, 229, 0.25) 33.49754%, rgba(79, 79, 221, 0.25) 41.37931%, rgba(0, 0, 0, 0) 41.37931%, rgba(0, 0, 0, 0) 41.87192%, rgba(121, 121, 229, 0.25) 41.87192%, rgba(79, 79, 221, 0.25) 49.75369%, rgba(0, 0, 0, 0) 49.75369%, rgba(0, 0, 0, 0) 50.24631%, rgba(121, 121, 229, 0.25) 50.24631%, rgba(79, 79, 221, 0.25) 58.12808%, rgba(0, 0, 0, 0) 58.12808%, rgba(0, 0, 0, 0) 58.62069%, rgba(121, 121, 229, 0.25) 58.62069%, rgba(79, 79, 221, 0.25) 66.50246%, rgba(0, 0, 0, 0) 66.50246%, rgba(0, 0, 0, 0) 66.99507%, rgba(121, 121, 229, 0.25) 66.99507%, rgba(79, 79, 221, 0.25) 74.87685%, rgba(0, 0, 0, 0) 74.87685%, rgba(0, 0, 0, 0) 75.36946%, rgba(121, 121, 229, 0.25) 75.36946%, rgba(79, 79, 221, 0.25) 83.25123%, rgba(0, 0, 0, 0) 83.25123%, rgba(0, 0, 0, 0) 83.74384%, rgba(121, 121, 229, 0.25) 83.74384%, rgba(79, 79, 221, 0.25) 91.62562%, rgba(0, 0, 0, 0) 91.62562%, rgba(0, 0, 0, 0) 92.11823%, rgba(121, 121, 229, 0.25) 92.11823%, rgba(79, 79, 221, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(121, 121, 229, 0.25) 0%, rgba(79, 79, 221, 0.25) 7.88177%, rgba(0, 0, 0, 0) 7.88177%, rgba(0, 0, 0, 0) 8.37438%, rgba(121, 121, 229, 0.25) 8.37438%, rgba(79, 79, 221, 0.25) 16.25616%, rgba(0, 0, 0, 0) 16.25616%, rgba(0, 0, 0, 0) 16.74877%, rgba(121, 121, 229, 0.25) 16.74877%, rgba(79, 79, 221, 0.25) 24.63054%, rgba(0, 0, 0, 0) 24.63054%, rgba(0, 0, 0, 0) 25.12315%, rgba(121, 121, 229, 0.25) 25.12315%, rgba(79, 79, 221, 0.25) 33.00493%, rgba(0, 0, 0, 0) 33.00493%, rgba(0, 0, 0, 0) 33.49754%, rgba(121, 121, 229, 0.25) 33.49754%, rgba(79, 79, 221, 0.25) 41.37931%, rgba(0, 0, 0, 0) 41.37931%, rgba(0, 0, 0, 0) 41.87192%, rgba(121, 121, 229, 0.25) 41.87192%, rgba(79, 79, 221, 0.25) 49.75369%, rgba(0, 0, 0, 0) 49.75369%, rgba(0, 0, 0, 0) 50.24631%, rgba(121, 121, 229, 0.25) 50.24631%, rgba(79, 79, 221, 0.25) 58.12808%, rgba(0, 0, 0, 0) 58.12808%, rgba(0, 0, 0, 0) 58.62069%, rgba(121, 121, 229, 0.25) 58.62069%, rgba(79, 79, 221, 0.25) 66.50246%, rgba(0, 0, 0, 0) 66.50246%, rgba(0, 0, 0, 0) 66.99507%, rgba(121, 121, 229, 0.25) 66.99507%, rgba(79, 79, 221, 0.25) 74.87685%, rgba(0, 0, 0, 0) 74.87685%, rgba(0, 0, 0, 0) 75.36946%, rgba(121, 121, 229, 0.25) 75.36946%, rgba(79, 79, 221, 0.25) 83.25123%, rgba(0, 0, 0, 0) 83.25123%, rgba(0, 0, 0, 0) 83.74384%, rgba(121, 121, 229, 0.25) 83.74384%, rgba(79, 79, 221, 0.25) 91.62562%, rgba(0, 0, 0, 0) 91.62562%, rgba(0, 0, 0, 0) 92.11823%, rgba(121, 121, 229, 0.25) 92.11823%, rgba(79, 79, 221, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+  background-position: left top;
+  -moz-background-origin: content;
+  -o-background-origin: content-box;
+  -webkit-background-origin: content;
+  background-origin: content-box;
+  -moz-background-clip: content;
+  -o-background-clip: content-box;
+  -webkit-background-clip: content;
+  background-clip: content-box;
 }
 /* line 38, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
 body:after {
@@ -65,26 +150,124 @@ body:after {
   clear: both;
 }
 
-/* line 46, ../sass/produkte.scss */
+/* line 54, ../sass/produkte.scss */
 .blueBox {
   width: 100%;
   height: 0;
   padding-bottom: 21.5625%;
-  background-color: #009ee0;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjEuMCIgeDI9IjAuNSIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSI1JSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjUiLz48c3RvcCBvZmZzZXQ9IjUlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(5%, rgba(0, 0, 0, 0.5)), color-stop(5%, rgba(0, 0, 0, 0)));
+  background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
+  -moz-background-size: 100% 1.5rem;
+  -o-background-size: 100% 1.5rem;
+  -webkit-background-size: 100% 1.5rem;
+  background-size: 100% 1.5rem;
+  background-position: left top;
   border-top: 1px solid #0fa5e2;
 }
+/* line 60, ../sass/produkte.scss */
+.blueBox .header_logo {
+  margin-top: 24px;
+  margin-top: 1.5rem;
+  padding-left: 8.37438%;
+  width: 20.68966%;
+  float: left;
+  margin-right: 0.49261%;
+  display: inline;
+}
+/* line 65, ../sass/produkte.scss */
+.blueBox .header_logo img {
+  max-width: 100%;
+}
+/* line 69, ../sass/produkte.scss */
+.blueBox ul {
+  padding-top: 72px;
+  padding-top: 4.5rem;
+  width: 40.67797%;
+  float: right;
+  margin-right: 0;
+  margin: 0;
+  margin-right: 8.47458%;
+  padding: 0;
+  text-align: right;
+}
+/* line 78, ../sass/produkte.scss */
+.blueBox ul li {
+  padding-top: 24px;
+  padding-top: 1.5rem;
+  list-style-type: none;
+  display: inline-block;
+  text-decoration: none;
+}
+/* line 85, ../sass/produkte.scss */
+.blueBox .h2 {
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 72px;
+  margin-top: 4.5rem;
+  font-size: 35px;
+  font-size: 2.2rem;
+  line-height: 48px;
+  line-height: 3rem;
+  width: 74.57627%;
+  float: left;
+  margin-right: 1.69492%;
+  clear: both;
+  padding-left: 8.37438%;
+  font-size: 0.1em;
+  font-weight: 500;
+}
+@media screen and (min-width: 200px) {
+  /* line 85, ../sass/produkte.scss */
+  .blueBox .h2 {
+    font-size: 0.75em;
+  }
+}
+@media screen and (min-width: 320px) {
+  /* line 85, ../sass/produkte.scss */
+  .blueBox .h2 {
+    font-size: 1.5em;
+  }
+}
+@media screen and (min-width: 540px) {
+  /* line 85, ../sass/produkte.scss */
+  .blueBox .h2 {
+    font-size: 2.25em;
+  }
+}
+@media screen and (min-width: 767px) {
+  /* line 85, ../sass/produkte.scss */
+  .blueBox .h2 {
+    font-size: 3em;
+  }
+}
+@media screen and (min-width: 991px) {
+  /* line 85, ../sass/produkte.scss */
+  .blueBox .h2 {
+    font-size: 3.75em;
+  }
+}
+@media screen and (min-width: 1299px) {
+  /* line 85, ../sass/produkte.scss */
+  .blueBox .h2 {
+    font-size: 3.75em;
+  }
+}
 
-/* line 52, ../sass/produkte.scss */
+/* line 99, ../sass/produkte.scss */
 .video {
   position: relative;
   /*    @include maintain-ratio($widthPSD 1252-346);
       background-color: green;*/
 }
-/* line 54, ../sass/produkte.scss */
+/* line 101, ../sass/produkte.scss */
 .video img {
-  width: 100%;
+  max-width: 100%;
 }
-/* line 57, ../sass/produkte.scss */
+/* line 104, ../sass/produkte.scss */
 .video .arrow {
   width: 7.5%;
   position: absolute;
@@ -93,32 +276,31 @@ body:after {
   transform: translate(-50%, -50%);
 }
 
-/* line 65, ../sass/produkte.scss */
+/* line 112, ../sass/produkte.scss */
 .blueText {
   width: 100%;
   height: 0;
   padding-bottom: 23.9375%;
-  background-color: white;
 }
 
-/* line 70, ../sass/produkte.scss */
+/* line 117, ../sass/produkte.scss */
 .werbung {
   width: 100%;
   height: 0;
   padding-bottom: 50%;
 }
 
-/* line 74, ../sass/produkte.scss */
+/* line 121, ../sass/produkte.scss */
 .blue {
   background-color: #009ee0;
 }
 
-/* line 78, ../sass/produkte.scss */
+/* line 125, ../sass/produkte.scss */
 .white {
   background-color: white;
 }
 
-/* line 82, ../sass/produkte.scss */
+/* line 129, ../sass/produkte.scss */
 .produkteLink {
   width: 100%;
   height: 0;
@@ -127,7 +309,7 @@ body:after {
   border-top: 1px solid white;
 }
 
-/* line 88, ../sass/produkte.scss */
+/* line 135, ../sass/produkte.scss */
 .photos {
   background-color: white;
   /*@include susy-grid-background;*/
@@ -142,7 +324,7 @@ body:after {
         @include susy-grid-background;
     }
 }*/
-/* line 102, ../sass/produkte.scss */
+/* line 149, ../sass/produkte.scss */
 .photo {
   margin-bottom: 0.49261%;
   /*    @media (max-width: $screen-smartphone-xxxs) {
@@ -151,7 +333,7 @@ body:after {
       }*/
 }
 @media (max-width: 991px) {
-  /* line 102, ../sass/produkte.scss */
+  /* line 149, ../sass/produkte.scss */
   .photo {
     width: 49.79079%;
     float: left;
@@ -171,7 +353,7 @@ body:after {
   }
 }
 @media (min-width: 992px) {
-  /* line 102, ../sass/produkte.scss */
+  /* line 149, ../sass/produkte.scss */
   .photo {
     width: 33.05439%;
     float: left;
@@ -197,7 +379,7 @@ body:after {
   }
 }
 
-/* line 120, ../sass/produkte.scss */
+/* line 167, ../sass/produkte.scss */
 .newsletter {
   position: relative;
   width: 100%;
@@ -208,8 +390,8 @@ body:after {
   background-size: contain;
   background-position: center;
 }
-/* line 128, ../sass/produkte.scss */
-.newsletter p {
+/* line 175, ../sass/produkte.scss */
+.newsletter h4 {
   text-transform: uppercase;
   font-weight: bold;
   color: #ffffff;
@@ -218,43 +400,43 @@ body:after {
   font-size: 0.1em;
 }
 @media screen and (min-width: 200px) {
-  /* line 128, ../sass/produkte.scss */
-  .newsletter p {
-    font-size: 0.2em;
+  /* line 175, ../sass/produkte.scss */
+  .newsletter h4 {
+    font-size: 0.3em;
   }
 }
 @media screen and (min-width: 320px) {
-  /* line 128, ../sass/produkte.scss */
-  .newsletter p {
-    font-size: 0.4em;
+  /* line 175, ../sass/produkte.scss */
+  .newsletter h4 {
+    font-size: 0.55em;
   }
 }
 @media screen and (min-width: 540px) {
-  /* line 128, ../sass/produkte.scss */
-  .newsletter p {
-    font-size: 0.6em;
-  }
-}
-@media screen and (min-width: 767px) {
-  /* line 128, ../sass/produkte.scss */
-  .newsletter p {
+  /* line 175, ../sass/produkte.scss */
+  .newsletter h4 {
     font-size: 0.8em;
   }
 }
+@media screen and (min-width: 767px) {
+  /* line 175, ../sass/produkte.scss */
+  .newsletter h4 {
+    font-size: 1.2em;
+  }
+}
 @media screen and (min-width: 991px) {
-  /* line 128, ../sass/produkte.scss */
-  .newsletter p {
-    font-size: 1em;
+  /* line 175, ../sass/produkte.scss */
+  .newsletter h4 {
+    font-size: 1.5em;
   }
 }
 @media screen and (min-width: 1299px) {
-  /* line 128, ../sass/produkte.scss */
-  .newsletter p {
+  /* line 175, ../sass/produkte.scss */
+  .newsletter h4 {
     font-size: 1.5em;
   }
 }
 
-/* line 140, ../sass/produkte.scss */
+/* line 187, ../sass/produkte.scss */
 .centered {
   padding-left: 20.8589%;
   padding-right: 20.8589%;
@@ -298,16 +480,17 @@ body:after {
           }
       }*/
 }
-/* line 150, ../sass/produkte.scss */
+/* line 197, ../sass/produkte.scss */
 .centered input {
   font-family: "Open Sans", sans-serif;
+  font-size: 0.1em;
   font-size: 0.875em;
   line-height: 3.125em;
   color: #86898b;
   /*@include gallery(12 of 48);*/
 }
 @media (max-width: 991px) {
-  /* line 150, ../sass/produkte.scss */
+  /* line 197, ../sass/produkte.scss */
   .centered input {
     width: 49.79079%;
     float: left;
@@ -327,7 +510,7 @@ body:after {
   }
 }
 @media (min-width: 992px) {
-  /* line 150, ../sass/produkte.scss */
+  /* line 197, ../sass/produkte.scss */
   .centered input {
     width: 24.68619%;
     float: left;
@@ -358,11 +541,47 @@ body:after {
     clear: none;
   }
 }
-/* line 164, ../sass/produkte.scss */
+@media screen and (min-width: 200px) {
+  /* line 197, ../sass/produkte.scss */
+  .centered input {
+    font-size: 0.175em;
+  }
+}
+@media screen and (min-width: 320px) {
+  /* line 197, ../sass/produkte.scss */
+  .centered input {
+    font-size: 0.35em;
+  }
+}
+@media screen and (min-width: 540px) {
+  /* line 197, ../sass/produkte.scss */
+  .centered input {
+    font-size: 0.525em;
+  }
+}
+@media screen and (min-width: 767px) {
+  /* line 197, ../sass/produkte.scss */
+  .centered input {
+    font-size: 0.7em;
+  }
+}
+@media screen and (min-width: 991px) {
+  /* line 197, ../sass/produkte.scss */
+  .centered input {
+    font-size: 0.875em;
+  }
+}
+@media screen and (min-width: 1299px) {
+  /* line 197, ../sass/produkte.scss */
+  .centered input {
+    font-size: 0.875em;
+  }
+}
+/* line 212, ../sass/produkte.scss */
 .centered input[type="text"] {
   width: 13.75em;
 }
-/* line 167, ../sass/produkte.scss */
+/* line 215, ../sass/produkte.scss */
 .centered input[type="submit"] {
   width: 16.4375em;
   background-color: #009ee0;
@@ -375,7 +594,7 @@ body:after {
   background-repeat: no-repeat;
 }
 
-/* line 216, ../sass/produkte.scss */
+/* line 264, ../sass/produkte.scss */
 .mail_box {
   background-image: url("../images/Newsletter_background.jpg");
   background-color: #009ee0;
@@ -384,7 +603,7 @@ body:after {
   background-repeat: no-repeat;
   height: 200px;
 }
-/* line 223, ../sass/produkte.scss */
+/* line 271, ../sass/produkte.scss */
 .mail_box h3 {
   font-size: 24px;
   font-weight: bold;
@@ -393,25 +612,25 @@ body:after {
   margin: 0px;
   padding: 30px 0px 0px 0px;
 }
-/* line 231, ../sass/produkte.scss */
+/* line 279, ../sass/produkte.scss */
 .mail_box form {
   padding: 15px 0px 30px 0px;
   text-align: center;
 }
-/* line 234, ../sass/produkte.scss */
+/* line 282, ../sass/produkte.scss */
 .mail_box form input {
   line-height: 46px;
   vertical-align: central;
   margin: 0px 2px;
   padding: 1px 10px;
 }
-/* line 240, ../sass/produkte.scss */
+/* line 288, ../sass/produkte.scss */
 .mail_box form input[type="text"] {
   width: 220px;
   font-size: 14px;
   color: #009ee0;
 }
-/* line 245, ../sass/produkte.scss */
+/* line 293, ../sass/produkte.scss */
 .mail_box form input[type="submit"] {
   width: 263px;
   background-image: url("../images/arrow_form.png");
@@ -431,7 +650,7 @@ body:after {
   cursor: pointer;
 }
 
-/* line 266, ../sass/produkte.scss */
+/* line 314, ../sass/produkte.scss */
 .kontakt {
   width: 100%;
   height: 0;
@@ -439,7 +658,7 @@ body:after {
   background-color: white;
 }
 
-/* line 271, ../sass/produkte.scss */
+/* line 319, ../sass/produkte.scss */
 footer {
   width: 100%;
   height: 0;
