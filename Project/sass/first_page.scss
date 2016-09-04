@@ -4,6 +4,7 @@
 @import "compass";
 @import "susy";
 @import "susyone";
+@import "partials/common";
 @import "partials/variables";
 @import "partials/mixins";
 
@@ -14,9 +15,30 @@ $gutter-width: 0.001em;
 $container-style: fluid; //static;
 @include border-box-sizing;
 
+//FONTS
+$p-general-font-sizes: (
+null  : 0.1em,
+$screen-smartphone-xxxs : 0.2em,
+$screen-smartphone-xxs : 0.4em,
+$screen-smartphone-xs: 0.6em,
+$screen-smartphone : 0.8em,
+$screen-tablet : 1em,
+$screen-desktop: 1em,
+);
+$h4: (
+null  : 0.1em,
+$screen-smartphone-xxxs : 0.2em,
+$screen-smartphone-xxs : 0.4em,
+$screen-smartphone-xs: 0.6em,
+$screen-smartphone : 0.8em,
+$screen-tablet : 1.5em,
+$screen-desktop: 1.5em,
+);
+
 //GENERAL
 body {
     @include container;
+    @include show-grid(overlay);
     //@include clearfix;
     @include susy-grid-background;
     font-family: "Open Sans", sans-serif;
@@ -29,7 +51,17 @@ body {
 //SECTIONS
 .sec_1_part_1 {
     @include maintain-ratio($widthPSD 800);
-    background-color: red;    
+    background-color: red;   
+    .header_logo, ul.header_nav {
+        display: inline-block;
+        li {
+            display: inline-block;
+        }
+        nav {
+/*            @include span(3 of 12);*/
+             @include prefix(1, 12);
+        }    
+    } 
 }
 .sec_1_part_2 {
     @include maintain-ratio($widthPSD 680);
@@ -45,7 +77,7 @@ body {
     /*padding: gutter(12) 0 0 0;*/
     //background-color: yellow; 
     //@include span(12 of 12);     
-   .slide_text {              
+    .slide_text {              
         //@include gallery(24 of 48);      
         //width: 50%;
         //margin-bottom: gutter(12);
@@ -61,7 +93,7 @@ body {
         //margin-bottom: gutter(12);
         //float: left;
         background-color: green;
-        
+
         //@include span(6 of 12);
         //@include last;
         //@include span-columns(4);    
@@ -86,10 +118,101 @@ body {
     background-color: $color5; 
 }
 .sec_5_part_2 {
+    position: relative;
     @include maintain-ratio($widthPSD 200);
-    background-color: $color3; 
+    background-image: url("../images/Newsletter_background.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    //background-color: $color2;
+    h4 {
+        text-transform: uppercase;
+        //font-size: 1.17em;
+        font-weight: bold;
+        color: $color1;
+        text-align: center;
+        white-space: nowrap;
+        @include font-size($h4);
+        //font-size: 1.5em;
+    }
 }
-.sec_5_part_2 {
+.centered {
+    //@include susy-grid-background;
+    //@include squish(10,10,28);
+    @include prefix(10, 48);
+    @include suffix(10, 48);
+    //@include prefix(6, 48); 
+    //@include suffix(6, 48);
+    //@include span-columns(28, 48);
+    @include centerer;
+
+    input {
+        @media (max-width: $screen-tablet) {
+            @include gallery(24 of 48);
+        }
+        @media (min-width: $screen-tablet-min) {
+            @include gallery(12 of 48);
+        }
+        font-family: "Open Sans", sans-serif;
+        font-size: 0.875em;  
+        line-height: 3.125em;
+        color: $color5;            
+        /*@include gallery(12 of 48);*/
+        //@include span-columns(14,48)
+    }
+    input[type="text"] {
+        width: 13.75em;
+    }
+    input[type="submit"] {
+        width: 16.4375em;
+        background-color: $color2;
+        color: $color1;
+        text-transform: uppercase;        
+        border: solid 0.0625em $color1; 
+        background-image: url('../images/arrow_form.png');
+        background-size: 6%;
+        background-position: 95% 50%;                    
+        background-repeat: no-repeat;
+    }
+    /*    @media only screen and (min-width: $screen-tablet-min) {
+            form {
+                padding: 15px 0px 30px 0px;
+                text-align: center; 
+                input {
+                    line-height: 46px;
+                    vertical-align: central;
+                    margin: 0px 2px;
+                    padding: 1px 10px;
+                }
+                input[type="text"] {
+                    width: 220px;
+                    font-size: 14px;
+                    color: $color2;                               
+                }
+                input[type="submit"] {
+                    width: 263px;
+                    background-image: url('../images/arrow_form.png');
+                    background-size: 6%;
+                    background-position: 95% 50%;                    
+                    background-repeat: no-repeat;
+                    background-color: $color2;
+                    color: $color1;
+                    text-transform: uppercase;
+                    text-align: left;
+                    font-size: 14px;
+                    letter-spacing: 2px;
+                    border: solid 1px $color1; 
+                    padding-top: 0px;
+                    padding-bottom: 0px;
+                    padding-left: 13px;
+                    cursor: pointer;
+                }
+            }
+        }*/
+
+
+}
+.sec_5_part_3 {
     @include maintain-ratio($widthPSD 740);
     background-color: $color1; 
 }

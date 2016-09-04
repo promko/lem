@@ -1,6 +1,14 @@
 @charset "UTF-8";
 /*GENERAL STYLES*/
 @import "https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800";
+@import "https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800";
+/* line 3, ../sass/partials/_common.scss */
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -26,7 +34,7 @@ and open the template in the editor.
   box-sizing: border-box;
 }
 
-/* line 18, ../sass/first_page.scss */
+/* line 39, ../sass/first_page.scss */
 body {
   *zoom: 1;
   padding-left: 0;
@@ -60,15 +68,28 @@ body:after {
   clear: both;
 }
 
-/* line 30, ../sass/first_page.scss */
+/* line 52, ../sass/first_page.scss */
 .sec_1_part_1 {
   width: 100%;
   height: 0;
   padding-bottom: 50%;
   background-color: red;
 }
+/* line 55, ../sass/first_page.scss */
+.sec_1_part_1 .header_logo, .sec_1_part_1 ul.header_nav {
+  display: inline-block;
+}
+/* line 57, ../sass/first_page.scss */
+.sec_1_part_1 .header_logo li, .sec_1_part_1 ul.header_nav li {
+  display: inline-block;
+}
+/* line 60, ../sass/first_page.scss */
+.sec_1_part_1 .header_logo nav, .sec_1_part_1 ul.header_nav nav {
+  /*            @include span(3 of 12);*/
+  padding-left: 8.33351%;
+}
 
-/* line 34, ../sass/first_page.scss */
+/* line 66, ../sass/first_page.scss */
 .sec_1_part_2 {
   width: 100%;
   height: 0;
@@ -76,7 +97,7 @@ body:after {
   background-color: #ffffff;
 }
 
-/* line 38, ../sass/first_page.scss */
+/* line 70, ../sass/first_page.scss */
 .sec_2_part_1 {
   width: 100%;
   height: 0;
@@ -84,21 +105,21 @@ body:after {
   background-color: #7e7f7f;
 }
 
-/* line 42, ../sass/first_page.scss */
+/* line 74, ../sass/first_page.scss */
 .sec_2_part_2 {
   width: 100%;
   height: 0;
   padding-bottom: 50%;
   /*padding: gutter(12) 0 0 0;*/
 }
-/* line 48, ../sass/first_page.scss */
+/* line 80, ../sass/first_page.scss */
 .sec_2_part_2 .slide_text {
   background-color: yellowgreen;
   width: 49.15254%;
   float: left;
   margin-right: 1.69492%;
 }
-/* line 56, ../sass/first_page.scss */
+/* line 88, ../sass/first_page.scss */
 .sec_2_part_2 .slide_video {
   width: 49.15254%;
   float: right;
@@ -106,7 +127,7 @@ body:after {
   background-color: green;
 }
 
-/* line 70, ../sass/first_page.scss */
+/* line 102, ../sass/first_page.scss */
 .sec_3 {
   width: 100%;
   height: 0;
@@ -114,7 +135,7 @@ body:after {
   background-color: #009ee0;
 }
 
-/* line 76, ../sass/first_page.scss */
+/* line 108, ../sass/first_page.scss */
 .sec_4_part_1 {
   width: 100%;
   height: 0;
@@ -122,7 +143,7 @@ body:after {
   background-color: #86898b;
 }
 
-/* line 80, ../sass/first_page.scss */
+/* line 112, ../sass/first_page.scss */
 .sec_4_part_2 {
   width: 100%;
   height: 0;
@@ -130,7 +151,7 @@ body:after {
   background-color: #ffffff;
 }
 
-/* line 84, ../sass/first_page.scss */
+/* line 116, ../sass/first_page.scss */
 .sec_5_part_1 {
   width: 100%;
   height: 0;
@@ -138,23 +159,193 @@ body:after {
   background-color: #86898b;
 }
 
-/* line 88, ../sass/first_page.scss */
+/* line 120, ../sass/first_page.scss */
 .sec_5_part_2 {
+  position: relative;
   width: 100%;
   height: 0;
   padding-bottom: 12.5%;
-  background-color: #000000;
+  background-image: url("../images/Newsletter_background.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+/* line 128, ../sass/first_page.scss */
+.sec_5_part_2 h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 0.1em;
+}
+@media screen and (min-width: 200px) {
+  /* line 128, ../sass/first_page.scss */
+  .sec_5_part_2 h4 {
+    font-size: 0.2em;
+  }
+}
+@media screen and (min-width: 320px) {
+  /* line 128, ../sass/first_page.scss */
+  .sec_5_part_2 h4 {
+    font-size: 0.4em;
+  }
+}
+@media screen and (min-width: 540px) {
+  /* line 128, ../sass/first_page.scss */
+  .sec_5_part_2 h4 {
+    font-size: 0.6em;
+  }
+}
+@media screen and (min-width: 767px) {
+  /* line 128, ../sass/first_page.scss */
+  .sec_5_part_2 h4 {
+    font-size: 0.8em;
+  }
+}
+@media screen and (min-width: 991px) {
+  /* line 128, ../sass/first_page.scss */
+  .sec_5_part_2 h4 {
+    font-size: 1.5em;
+  }
+}
+@media screen and (min-width: 1299px) {
+  /* line 128, ../sass/first_page.scss */
+  .sec_5_part_2 h4 {
+    font-size: 1.5em;
+  }
 }
 
-/* line 92, ../sass/first_page.scss */
-.sec_5_part_2 {
+/* line 139, ../sass/first_page.scss */
+.centered {
+  padding-left: 20.83344%;
+  padding-right: 20.83344%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*    @media only screen and (min-width: $screen-tablet-min) {
+          form {
+              padding: 15px 0px 30px 0px;
+              text-align: center; 
+              input {
+                  line-height: 46px;
+                  vertical-align: central;
+                  margin: 0px 2px;
+                  padding: 1px 10px;
+              }
+              input[type="text"] {
+                  width: 220px;
+                  font-size: 14px;
+                  color: $color2;                               
+              }
+              input[type="submit"] {
+                  width: 263px;
+                  background-image: url('../images/arrow_form.png');
+                  background-size: 6%;
+                  background-position: 95% 50%;                    
+                  background-repeat: no-repeat;
+                  background-color: $color2;
+                  color: $color1;
+                  text-transform: uppercase;
+                  text-align: left;
+                  font-size: 14px;
+                  letter-spacing: 2px;
+                  border: solid 1px $color1; 
+                  padding-top: 0px;
+                  padding-bottom: 0px;
+                  padding-left: 13px;
+                  cursor: pointer;
+              }
+          }
+      }*/
+}
+/* line 149, ../sass/first_page.scss */
+.centered input {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875em;
+  line-height: 3.125em;
+  color: #86898b;
+  /*@include gallery(12 of 48);*/
+}
+@media (max-width: 991px) {
+  /* line 149, ../sass/first_page.scss */
+  .centered input {
+    width: 49.79079%;
+    float: left;
+  }
+  /* line 66, ../sass/susy/language/susy/_gallery.scss */
+  .centered input:nth-child(2n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+  /* line 66, ../sass/susy/language/susy/_gallery.scss */
+  .centered input:nth-child(2n + 2) {
+    margin-left: 50.20921%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+@media (min-width: 992px) {
+  /* line 149, ../sass/first_page.scss */
+  .centered input {
+    width: 24.68619%;
+    float: left;
+  }
+  /* line 66, ../sass/susy/language/susy/_gallery.scss */
+  .centered input:nth-child(4n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+  /* line 66, ../sass/susy/language/susy/_gallery.scss */
+  .centered input:nth-child(4n + 2) {
+    margin-left: 25.1046%;
+    margin-right: -100%;
+    clear: none;
+  }
+  /* line 66, ../sass/susy/language/susy/_gallery.scss */
+  .centered input:nth-child(4n + 3) {
+    margin-left: 50.20921%;
+    margin-right: -100%;
+    clear: none;
+  }
+  /* line 66, ../sass/susy/language/susy/_gallery.scss */
+  .centered input:nth-child(4n + 4) {
+    margin-left: 75.31381%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+/* line 163, ../sass/first_page.scss */
+.centered input[type="text"] {
+  width: 13.75em;
+}
+/* line 166, ../sass/first_page.scss */
+.centered input[type="submit"] {
+  width: 16.4375em;
+  background-color: #009ee0;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: solid 0.0625em #ffffff;
+  background-image: url("../images/arrow_form.png");
+  background-size: 6%;
+  background-position: 95% 50%;
+  background-repeat: no-repeat;
+}
+
+/* line 215, ../sass/first_page.scss */
+.sec_5_part_3 {
   width: 100%;
   height: 0;
   padding-bottom: 46.25%;
   background-color: #ffffff;
 }
 
-/* line 98, ../sass/first_page.scss */
+/* line 221, ../sass/first_page.scss */
 footer {
   width: 100%;
   height: 0;
@@ -162,7 +353,7 @@ footer {
   background-color: #009ee0;
   position: relative;
 }
-/* line 102, ../sass/first_page.scss */
+/* line 225, ../sass/first_page.scss */
 footer p {
   position: absolute;
   top: 50%;
