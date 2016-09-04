@@ -18,6 +18,35 @@ $p-font-sizes: (
   $screen-tablet : 1em,
   $screen-desktop: 1.5em,
 );
+$h2-fs60: (
+null  : 0.1em,
+$screen-smartphone-xxxs : 0.75em,
+$screen-smartphone-xxs : 1.5em,
+$screen-smartphone-xs: 2.25em,
+$screen-smartphone : 3em,
+$screen-tablet : 3.75em,
+$screen-desktop: 3.75em,
+);
+$h3-fs50: (
+null  : 0.1em,
+$screen-smartphone-xxxs : 0.625em,
+$screen-smartphone-xxs : 1.25em,
+$screen-smartphone-xs: 1.875em,
+$screen-smartphone : 2.5em,
+$screen-tablet : 3.125em,
+$screen-desktop: 3.125em,
+);
+$h4-fs24: (
+null  : 0.1em,
+$screen-smartphone-xxxs : 0.3em,
+$screen-smartphone-xxs : 0.6em,
+$screen-smartphone-xs: 0.9em,
+$screen-smartphone : 1.2em,
+$screen-tablet : 1.5em,
+$screen-desktop: 1.5em,
+);
+
+
 
 
 /*
