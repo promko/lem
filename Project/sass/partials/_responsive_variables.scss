@@ -16,3 +16,11 @@ $screen-desktop: 1299px;
 $screen-desktop-min: $screen-desktop + 1;
 
 
+$breakpoints: (
+  screen-smartphone-xxxs: 200px,
+  screen-smartphone-xxs: 330px,
+  screen-smartphone-xs: 540px,
+  screen-smartphone: 767px,
+  screen-tablet: 991px,
+  screen-desktop: 1299px
+);

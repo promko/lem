@@ -45,9 +45,9 @@ $rhythm-unit: "rem";
 @include establish-baseline;
 
 body {
-    //background: black;
+    background: $color2;
     @include container;
-    @include susy-grid-background;
+    //@include susy-grid-background;
 
 }
 a {
@@ -57,8 +57,8 @@ a {
 .blueBox {
     @include maintain-ratio($widthPSD 345);
 
-    //background-color: $color2;
-    @include debug-vertical-alignment;
+    background-color: $color2;
+    //@include debug-vertical-alignment;
     border-top: 1px solid $color6;
     .header_logo {
         @include margin-leader;
@@ -71,7 +71,7 @@ a {
     }
     ul {
         @include padding-leader(3);
-        @include span(last 5 of 12);
+        @include span(last 8 of 12);
         //@include suffix(2, 12);
         margin: 0;
         margin-right: span(1.2 of 12);
@@ -113,32 +113,41 @@ a {
         }
         li.arrow {
             background-image: url('../images/arrow_nav.png');
-                background-size: 4%;
-                background-position: 7% 74%;
-                background-repeat: no-repeat;
-                a {
-                  padding-left: 22px;  
-                }
+            background-size: 4%;
+            background-position: 7% 74%;
+            background-repeat: no-repeat;
+            a {
+                padding-left: 22px;  
+            }
+        }
+    }
+    li.prod {
+        @media (max-width: 420px) {
+            display: none;
         }
     }
     .h2 {
-        text-transform: uppercase;
-        color: $color1;
-        @include margin-leader(3);
-        @include adjust-font-size-to(2.2rem);
+        //@include margin-leader(1);
+        //@include adjust-font-size-to(2.2rem);
+
         @include span(first 9 of 12);
         @include break;
         @include prefix(1, 12);        
-        @include font-size($h2-fs60);
-        font-weight: 500;
+        //@include font-size($h2-fs60);
         //@include suffix(3, 12);
+        h2 {
+            text-transform: uppercase;
+            font-weight: 700;
+            color: $color1;
+            @include font-size($h1);
+        }
     }
 }
 
 .video {
     position: relative;
     img {
-        max-width: 100%
+        width: 100%
     }
     .arrow {
         width: 7.5%;
@@ -149,8 +158,28 @@ a {
 }
 
 .blueText {
+    background-color: white;
+    position: relative;
     @include maintain-ratio($widthPSD 1635-1252);
-    //background-color: white;
+    .texts {
+        @include centerer;
+        width: 100%;
+        h2, h6 {
+            text-align: center;
+            color: $color2;
+        }
+        h2 {
+            //@include adjust-font-size-to(2.2rem);
+            @include font-size($h2);
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        h6 {
+            @include font-size($h6);
+            //@include padding-leader;
+        }
+    }
+
 }
 
 .werbung {
@@ -212,147 +241,97 @@ a {
     background-position: center;
     //background-color: $color2;
     h4 {
+        text-align: center;
         text-transform: uppercase;
         //font-size: 1.17em;
         font-weight: bold;
         color: $color1;
         text-align: center;
         white-space: nowrap;
-        @include font-size($h4-fs24);
+        @include font-size($h4);
         //font-size: 1.5em;
     }
     //@include susy-grid-background;
-}
-.centered {
-    //@include susy-grid-background;
-    //@include squish(10,10,28);
-    @include prefix(10, 48);
-    @include suffix(10, 48);
-    //@include prefix(6, 48); 
-    //@include suffix(6, 48);
-    //@include span-columns(28, 48);
-    @include centerer;
 
-    input {
-        @media (max-width: $screen-tablet) {
-            @include gallery(24 of 48);
-        }
-        @media (min-width: $screen-tablet-min) {
-            @include gallery(12 of 48);
-        }
-        font-family: "Open Sans", sans-serif;
-        @include font-size($p-small-14fs);
-        font-size: 0.875em;  
-        line-height: 3.125em;
-        color: $color5;            
-        /*@include gallery(12 of 48);*/
-        //@include span-columns(14,48)
-    }
-    input[type="text"] {
-        width: 13.75em;
-    }
-    input[type="submit"] {
-        width: 16.4375em;
-        background-color: $color2;
-        color: $color1;
-        text-transform: uppercase;        
-        border: solid 0.0625em $color1; 
-        background-image: url('../images/arrow_form.png');
-        background-size: 6%;
-        background-position: 95% 50%;                    
-        background-repeat: no-repeat;
-    }
-    /*    @media only screen and (min-width: $screen-tablet-min) {
-            form {
-                padding: 15px 0px 30px 0px;
-                text-align: center; 
-                input {
-                    line-height: 46px;
-                    vertical-align: central;
-                    margin: 0px 2px;
-                    padding: 1px 10px;
-                }
-                input[type="text"] {
-                    width: 220px;
-                    font-size: 14px;
-                    color: $color2;                               
-                }
-                input[type="submit"] {
-                    width: 263px;
-                    background-image: url('../images/arrow_form.png');
-                    background-size: 6%;
-                    background-position: 95% 50%;                    
-                    background-repeat: no-repeat;
-                    background-color: $color2;
-                    color: $color1;
-                    text-transform: uppercase;
-                    text-align: left;
-                    font-size: 14px;
-                    letter-spacing: 2px;
-                    border: solid 1px $color1; 
-                    padding-top: 0px;
-                    padding-bottom: 0px;
-                    padding-left: 13px;
-                    cursor: pointer;
-                }
-            }
-        }*/
+    .centered {
+        //@include susy-grid-background;
+        //@include squish(10,10,28);
+        @include prefix(2, 12);
+        @include span(10 of 12);
+        @include suffix(2, 12);
+        //@include margin-leader(1);
+        //@include prefix(6, 48); 
+        //@include suffix(6, 48);
+        //@include span-columns(28, 48);
+        @include centerer;
 
-
-}
-.mail_box {
-    background-image: url("../images/Newsletter_background.jpg");
-    background-color: #009ee0;
-    background-size: 100%;
-    background-position: right center;
-    background-repeat: no-repeat;
-    height: 200px;
-    h3 {
-        font-size: 24px;
-        font-weight: bold;
-        text-align: center;
-        color: #ffffff;
-        margin: 0px;
-        padding: 30px 0px 0px 0px;
-    }
-    form {
-        padding: 15px 0px 30px 0px;
-        text-align: center; 
         input {
-            line-height: 46px;
-            vertical-align: central;
-            margin: 0px 2px;
-            padding: 1px 10px;
+            @media (max-width: $screen-tablet) {
+                @include gallery(24 of 48);
+            }
+            @media (min-width: $screen-tablet-min) {
+                @include gallery(12 of 48);
+            }
+            font-family: "Open Sans", sans-serif;
+            @include font-size($p-small-14fs);
+            font-size: 0.875em;  
+            line-height: 3.125em;
+            @media (max-width: $screen-tablet) {
+                line-height: 1.5em;
+            }
+            color: $color5;            
+            /*@include gallery(12 of 48);*/
+            //@include span-columns(14,48)
         }
         input[type="text"] {
-            width: 220px;
-            font-size: 14px;
-            color: $color2;                               
+            width: 14em;
         }
         input[type="submit"] {
-            width: 263px;
-            background-image: url('../images/arrow_form.png');
+            width: 14em;
+            background-color: $color2;
+            color: $color1;
+            text-transform: uppercase;        
+            border: solid 0.0625em $color1; 
+            //background-image: url('../images/arrow_form.png');
             background-size: 6%;
             background-position: 95% 50%;                    
             background-repeat: no-repeat;
-            background-color: $color2;
-            color: $color1;
-            text-transform: uppercase;
-            text-align: left;
-            font-size: 14px;
-            letter-spacing: 2px;
-            border: solid 1px $color1; 
-            padding-top: 0px;
-            padding-bottom: 0px;
-            padding-left: 13px;
-            cursor: pointer;
         }
     }
 }
-
 .kontakt {
+    position: relative;
     @include maintain-ratio($widthPSD 6197-5463);
     background-color: white;
+    h1, h6 {
+
+        text-align: center;
+        color: $color2;
+
+    }
+    h1 {
+        //@include padding-leader(7);
+        text-transform: uppercase;
+        font-weight: 900;
+        @include font-size($h1);
+    }
+    h6 {
+        @include font-size($h6);
+    }
+    .img {
+        @include padding-leader(2);
+        @include centerer(true, false);
+        @include span(1.5 of 12);
+        //
+        img {
+            max-width: 100%
+        }
+    }
+    .arrow_top {
+        @include break;
+        @include suffix(1, 12);
+        @include span(last 1 of 48);
+    }
 }
 
 footer {
