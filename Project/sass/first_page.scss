@@ -97,8 +97,8 @@ body {
             display: inline-block;
         }
         nav {
-/*            @include span(3 of 12);*/
-             @include prefix(1, 12);
+            /*            @include span(3 of 12);*/
+            @include prefix(1, 12);
         }    
     } 
 }

@@ -150,7 +150,12 @@ body:after {
   clear: both;
 }
 
-/* line 54, ../sass/produkte.scss */
+/* line 53, ../sass/produkte.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 57, ../sass/produkte.scss */
 .blueBox {
   width: 100%;
   height: 0;
@@ -168,7 +173,7 @@ body:after {
   background-position: left top;
   border-top: 1px solid #0fa5e2;
 }
-/* line 60, ../sass/produkte.scss */
+/* line 63, ../sass/produkte.scss */
 .blueBox .header_logo {
   margin-top: 24px;
   margin-top: 1.5rem;
@@ -178,11 +183,11 @@ body:after {
   margin-right: 0.49261%;
   display: inline;
 }
-/* line 65, ../sass/produkte.scss */
+/* line 68, ../sass/produkte.scss */
 .blueBox .header_logo img {
   max-width: 100%;
 }
-/* line 69, ../sass/produkte.scss */
+/* line 72, ../sass/produkte.scss */
 .blueBox ul {
   padding-top: 72px;
   padding-top: 4.5rem;
@@ -194,15 +199,53 @@ body:after {
   padding: 0;
   text-align: right;
 }
-/* line 78, ../sass/produkte.scss */
+/* line 82, ../sass/produkte.scss */
 .blueBox ul li {
   padding-top: 24px;
   padding-top: 1.5rem;
   list-style-type: none;
   display: inline-block;
   text-decoration: none;
+  margin: 0px 0px 0px 8px;
 }
-/* line 85, ../sass/produkte.scss */
+/* line 88, ../sass/produkte.scss */
+.blueBox ul li a {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  line-height: 38px;
+  letter-spacing: -0.8px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* line 97, ../sass/produkte.scss */
+.blueBox ul li a:hover {
+  border-style: solid;
+  border-radius: 7px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #ffffff;
+}
+/* line 104, ../sass/produkte.scss */
+.blueBox ul li a.selected {
+  border-style: solid;
+  border-radius: 7px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #ffffff;
+}
+/* line 114, ../sass/produkte.scss */
+.blueBox ul li.arrow {
+  background-image: url("../images/arrow_nav.png");
+  background-size: 4%;
+  background-position: 7% 74%;
+  background-repeat: no-repeat;
+}
+/* line 119, ../sass/produkte.scss */
+.blueBox ul li.arrow a {
+  padding-left: 22px;
+}
+/* line 124, ../sass/produkte.scss */
 .blueBox .h2 {
   text-transform: uppercase;
   color: #ffffff;
@@ -221,53 +264,53 @@ body:after {
   font-weight: 500;
 }
 @media screen and (min-width: 200px) {
-  /* line 85, ../sass/produkte.scss */
+  /* line 124, ../sass/produkte.scss */
   .blueBox .h2 {
     font-size: 0.75em;
   }
 }
 @media screen and (min-width: 320px) {
-  /* line 85, ../sass/produkte.scss */
+  /* line 124, ../sass/produkte.scss */
   .blueBox .h2 {
     font-size: 1.5em;
   }
 }
 @media screen and (min-width: 540px) {
-  /* line 85, ../sass/produkte.scss */
+  /* line 124, ../sass/produkte.scss */
   .blueBox .h2 {
     font-size: 2.25em;
   }
 }
 @media screen and (min-width: 767px) {
-  /* line 85, ../sass/produkte.scss */
+  /* line 124, ../sass/produkte.scss */
   .blueBox .h2 {
     font-size: 3em;
   }
 }
 @media screen and (min-width: 991px) {
-  /* line 85, ../sass/produkte.scss */
+  /* line 124, ../sass/produkte.scss */
   .blueBox .h2 {
     font-size: 3.75em;
   }
 }
 @media screen and (min-width: 1299px) {
-  /* line 85, ../sass/produkte.scss */
+  /* line 124, ../sass/produkte.scss */
   .blueBox .h2 {
     font-size: 3.75em;
   }
 }
 
-/* line 99, ../sass/produkte.scss */
+/* line 138, ../sass/produkte.scss */
 .video {
   position: relative;
   /*    @include maintain-ratio($widthPSD 1252-346);
       background-color: green;*/
 }
-/* line 101, ../sass/produkte.scss */
+/* line 140, ../sass/produkte.scss */
 .video img {
   max-width: 100%;
 }
-/* line 104, ../sass/produkte.scss */
+/* line 143, ../sass/produkte.scss */
 .video .arrow {
   width: 7.5%;
   position: absolute;
@@ -276,31 +319,31 @@ body:after {
   transform: translate(-50%, -50%);
 }
 
-/* line 112, ../sass/produkte.scss */
+/* line 151, ../sass/produkte.scss */
 .blueText {
   width: 100%;
   height: 0;
   padding-bottom: 23.9375%;
 }
 
-/* line 117, ../sass/produkte.scss */
+/* line 156, ../sass/produkte.scss */
 .werbung {
   width: 100%;
   height: 0;
   padding-bottom: 50%;
 }
 
-/* line 121, ../sass/produkte.scss */
+/* line 160, ../sass/produkte.scss */
 .blue {
   background-color: #009ee0;
 }
 
-/* line 125, ../sass/produkte.scss */
+/* line 164, ../sass/produkte.scss */
 .white {
   background-color: white;
 }
 
-/* line 129, ../sass/produkte.scss */
+/* line 168, ../sass/produkte.scss */
 .produkteLink {
   width: 100%;
   height: 0;
@@ -309,7 +352,7 @@ body:after {
   border-top: 1px solid white;
 }
 
-/* line 135, ../sass/produkte.scss */
+/* line 174, ../sass/produkte.scss */
 .photos {
   background-color: white;
   /*@include susy-grid-background;*/
@@ -324,7 +367,7 @@ body:after {
         @include susy-grid-background;
     }
 }*/
-/* line 149, ../sass/produkte.scss */
+/* line 188, ../sass/produkte.scss */
 .photo {
   margin-bottom: 0.49261%;
   /*    @media (max-width: $screen-smartphone-xxxs) {
@@ -333,7 +376,7 @@ body:after {
       }*/
 }
 @media (max-width: 991px) {
-  /* line 149, ../sass/produkte.scss */
+  /* line 188, ../sass/produkte.scss */
   .photo {
     width: 49.79079%;
     float: left;
@@ -353,7 +396,7 @@ body:after {
   }
 }
 @media (min-width: 992px) {
-  /* line 149, ../sass/produkte.scss */
+  /* line 188, ../sass/produkte.scss */
   .photo {
     width: 33.05439%;
     float: left;
@@ -379,7 +422,7 @@ body:after {
   }
 }
 
-/* line 167, ../sass/produkte.scss */
+/* line 206, ../sass/produkte.scss */
 .newsletter {
   position: relative;
   width: 100%;
@@ -390,7 +433,7 @@ body:after {
   background-size: contain;
   background-position: center;
 }
-/* line 175, ../sass/produkte.scss */
+/* line 214, ../sass/produkte.scss */
 .newsletter h4 {
   text-transform: uppercase;
   font-weight: bold;
@@ -400,43 +443,43 @@ body:after {
   font-size: 0.1em;
 }
 @media screen and (min-width: 200px) {
-  /* line 175, ../sass/produkte.scss */
+  /* line 214, ../sass/produkte.scss */
   .newsletter h4 {
     font-size: 0.3em;
   }
 }
 @media screen and (min-width: 320px) {
-  /* line 175, ../sass/produkte.scss */
+  /* line 214, ../sass/produkte.scss */
   .newsletter h4 {
     font-size: 0.55em;
   }
 }
 @media screen and (min-width: 540px) {
-  /* line 175, ../sass/produkte.scss */
+  /* line 214, ../sass/produkte.scss */
   .newsletter h4 {
     font-size: 0.8em;
   }
 }
 @media screen and (min-width: 767px) {
-  /* line 175, ../sass/produkte.scss */
+  /* line 214, ../sass/produkte.scss */
   .newsletter h4 {
     font-size: 1.2em;
   }
 }
 @media screen and (min-width: 991px) {
-  /* line 175, ../sass/produkte.scss */
+  /* line 214, ../sass/produkte.scss */
   .newsletter h4 {
     font-size: 1.5em;
   }
 }
 @media screen and (min-width: 1299px) {
-  /* line 175, ../sass/produkte.scss */
+  /* line 214, ../sass/produkte.scss */
   .newsletter h4 {
     font-size: 1.5em;
   }
 }
 
-/* line 187, ../sass/produkte.scss */
+/* line 226, ../sass/produkte.scss */
 .centered {
   padding-left: 20.8589%;
   padding-right: 20.8589%;
@@ -480,7 +523,7 @@ body:after {
           }
       }*/
 }
-/* line 197, ../sass/produkte.scss */
+/* line 236, ../sass/produkte.scss */
 .centered input {
   font-family: "Open Sans", sans-serif;
   font-size: 0.1em;
@@ -490,7 +533,7 @@ body:after {
   /*@include gallery(12 of 48);*/
 }
 @media (max-width: 991px) {
-  /* line 197, ../sass/produkte.scss */
+  /* line 236, ../sass/produkte.scss */
   .centered input {
     width: 49.79079%;
     float: left;
@@ -510,7 +553,7 @@ body:after {
   }
 }
 @media (min-width: 992px) {
-  /* line 197, ../sass/produkte.scss */
+  /* line 236, ../sass/produkte.scss */
   .centered input {
     width: 24.68619%;
     float: left;
@@ -542,46 +585,46 @@ body:after {
   }
 }
 @media screen and (min-width: 200px) {
-  /* line 197, ../sass/produkte.scss */
+  /* line 236, ../sass/produkte.scss */
   .centered input {
     font-size: 0.175em;
   }
 }
 @media screen and (min-width: 320px) {
-  /* line 197, ../sass/produkte.scss */
+  /* line 236, ../sass/produkte.scss */
   .centered input {
     font-size: 0.35em;
   }
 }
 @media screen and (min-width: 540px) {
-  /* line 197, ../sass/produkte.scss */
+  /* line 236, ../sass/produkte.scss */
   .centered input {
     font-size: 0.525em;
   }
 }
 @media screen and (min-width: 767px) {
-  /* line 197, ../sass/produkte.scss */
+  /* line 236, ../sass/produkte.scss */
   .centered input {
     font-size: 0.7em;
   }
 }
 @media screen and (min-width: 991px) {
-  /* line 197, ../sass/produkte.scss */
+  /* line 236, ../sass/produkte.scss */
   .centered input {
     font-size: 0.875em;
   }
 }
 @media screen and (min-width: 1299px) {
-  /* line 197, ../sass/produkte.scss */
+  /* line 236, ../sass/produkte.scss */
   .centered input {
     font-size: 0.875em;
   }
 }
-/* line 212, ../sass/produkte.scss */
+/* line 251, ../sass/produkte.scss */
 .centered input[type="text"] {
   width: 13.75em;
 }
-/* line 215, ../sass/produkte.scss */
+/* line 254, ../sass/produkte.scss */
 .centered input[type="submit"] {
   width: 16.4375em;
   background-color: #009ee0;
@@ -594,7 +637,7 @@ body:after {
   background-repeat: no-repeat;
 }
 
-/* line 264, ../sass/produkte.scss */
+/* line 303, ../sass/produkte.scss */
 .mail_box {
   background-image: url("../images/Newsletter_background.jpg");
   background-color: #009ee0;
@@ -603,7 +646,7 @@ body:after {
   background-repeat: no-repeat;
   height: 200px;
 }
-/* line 271, ../sass/produkte.scss */
+/* line 310, ../sass/produkte.scss */
 .mail_box h3 {
   font-size: 24px;
   font-weight: bold;
@@ -612,25 +655,25 @@ body:after {
   margin: 0px;
   padding: 30px 0px 0px 0px;
 }
-/* line 279, ../sass/produkte.scss */
+/* line 318, ../sass/produkte.scss */
 .mail_box form {
   padding: 15px 0px 30px 0px;
   text-align: center;
 }
-/* line 282, ../sass/produkte.scss */
+/* line 321, ../sass/produkte.scss */
 .mail_box form input {
   line-height: 46px;
   vertical-align: central;
   margin: 0px 2px;
   padding: 1px 10px;
 }
-/* line 288, ../sass/produkte.scss */
+/* line 327, ../sass/produkte.scss */
 .mail_box form input[type="text"] {
   width: 220px;
   font-size: 14px;
   color: #009ee0;
 }
-/* line 293, ../sass/produkte.scss */
+/* line 332, ../sass/produkte.scss */
 .mail_box form input[type="submit"] {
   width: 263px;
   background-image: url("../images/arrow_form.png");
@@ -650,7 +693,7 @@ body:after {
   cursor: pointer;
 }
 
-/* line 314, ../sass/produkte.scss */
+/* line 353, ../sass/produkte.scss */
 .kontakt {
   width: 100%;
   height: 0;
@@ -658,7 +701,7 @@ body:after {
   background-color: white;
 }
 
-/* line 319, ../sass/produkte.scss */
+/* line 358, ../sass/produkte.scss */
 footer {
   width: 100%;
   height: 0;
